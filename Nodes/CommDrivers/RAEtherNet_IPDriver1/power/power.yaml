@@ -1,0 +1,5319 @@
+Name: power
+Id: g=9c2e845dcfbc33b249fe7e9ee0e2fe54
+Type: RAEtherNetIPStation
+Children:
+- Name: Route
+  Id: g=003a559f9cf86e1af57ec56fdabd5837
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "127.0.0.1"
+- Name: OperationCode
+  Id: g=1cfad6c67e1fcf2ad6832f0aa17c78af
+  Type: BaseDataVariableType
+  DataType: CommunicationOperationCode
+  AccessLevel: Read
+  Value: 0
+- Class: Reference
+  Target: ns=13;i=29
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=30
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=67
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=31
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=94
+  Direction: Forward
+- Class: Reference
+  Target: ns=13;i=96
+  Direction: Forward
+- File: Tags/Tags.yaml
+- Name: Types
+  Id: g=f12cf8de27ef37aa7edfa7ad07b16bf3
+  Type: BaseObjectType
+  Children:
+  - Name: raC_Dvc_E300
+    Id: g=9c288946f9dbfc8bb1de910322b2a9ff
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=64e1b2b1463a4558f087ddb4d65e5bbd
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=678e4a5da063f3a8d34e13c1599ce6c3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=3402b49747c75bd72eeb9a2a145fbc0d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f439d9d64a0efbf09e16cf89d1b4bc6c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Inp_MotorFLA
+      Id: g=39f7a274d8de6695c0ddba2b13fbf391
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=f042bd4e96c7d8225e4b2b21c54b2594
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_MotorFLA"
+    - Name: Val_OutputCurrent
+      Id: g=73c10c8420810175e8529de2a6b5caf4
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=b40f76f9b02918ea28b67adb55d974c5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Val_MotorFLA
+      Id: g=e7836c31de49102fa7fde021968229fc
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=5d6dacdc835ae996fc918258b60fe327
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_MotorFLA"
+    - Name: Val_PercentFLA
+      Id: g=cc90d451517732e2498848de5885ff1a
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=b647292512d76ca51aad9ee36f730a2d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_PercentFLA"
+    - Name: Val_PercentThermCapacityUsed
+      Id: g=78c7934be7b564c47455be313770c05a
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=1e50af92c3256cf3b9c67abb2b247585
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_PercentThermCapacityUsed"
+    - Name: Sts_bNotReady
+      Id: g=cb7466de76fc390d67ee96a235496dd3
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=e05f3acf42641f7ea57621419dc54f6f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_Virtual
+      Id: g=116b7a17f33f375a473b3eb2cf4b5501
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4a6d0d19c3d74c4ed42b02c7de4a7b7e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=4818464a8d75ed08f063ba927a8a09e8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=8c0d4815f0296bf6a0744f7958c71196
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=b182ce5803a9c5a4446a1e4f1b223f32
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e49790352b9a911375519c3649d1e9af
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=b16a8939955448f49e827f94b2a92c26
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f9a5291ad4ee3a80918d981341ee412f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=044b1a4193d5523189093753001e2332
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a7b2f29458a844ba2afb96c6dbf8f030
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=0db4cb2441c16aec0f849973687f8e02
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ba858a4155c8d266db9d8a83f00c235e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=e889dcd6287ebbdd70d9cec1d64f0a38
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=2e0aaa24d31aad9057384855568b1861
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: raC_Dvc_E300
+      Id: g=621db1956e0be9648f309188a8929768
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a8bcf438c46588a57d22cf23e4ce4874
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_E300"
+  - Name: raC_Dvc_PF755CM
+    Id: g=03d74e786a405af48d40782ccbc9b420
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=f3670e37f1c9fd13ec291dbc29be12df
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=d768a0dd607a795c9161b21339e81d07
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=9873020fec7eb1b6bd169753d5957e7f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0267eaac43023f7feade537ef683a3a3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Val_ActualVelocity
+      Id: g=edcafa06658165d9d8fb4587356b5830
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=0db721a9c936a995b4bc2592095ce461
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualVelocity"
+    - Name: Val_ActualPosition
+      Id: g=6778e5c4b7874725b93b652b15f4e325
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=edb5c8847b21ad07d3982170be65da4d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualPosition"
+    - Name: Sts_Virtual
+      Id: g=fa17df4f30a352914ac0dbfd21a0c537
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=05cfe768367ed4a682b94b87c19d44a2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=58acbb5e09a0b4a335e4dbd1d1104b74
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=9fb5279cec2564667bdcb279bb71c43e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=89d251afb01bae14e25552ea5b10dbc1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bb45362a630ed3b8631783b90a4602a9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=0caeeba150e174404764e88122a2857f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=520dc4854ec34821a9671fc69a5ddfc7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=f3606d8e01e4cbfeafe8442f59fb6ad8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3607557f840bebc362be5f0bc3c4c629
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=443dc9947f5aa8ae785d97c001570d2f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e2290d6bc433247f398ad667d2e34574
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=5d5f8d12e22e678f0aa5fec731b7d8d2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=523dc450514a4f32a07c95aaf003827d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_NoMotion
+      Id: g=2411ad8f4f229805066c430abb66459d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ae9ba30285021e063a5ccb4ebb0c1a92
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_NoMotion"
+    - Name: Sts_ZeroSpeed
+      Id: g=cefa49f07dac1d560b2c12118191bda2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1bebaceceef1f64207f471445ed6f1be
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_PF755CM
+      Id: g=a873cbbf8557300f89e73b8d45632cf7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=547d62baaa447548849de04bf69fb4f8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_PF755CM"
+    - Name: Sts_bNotReady
+      Id: g=d533e2621c704ef74eb0a1d145178571
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=63b7f0f07da0b80465f0173939e3d3ed
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+  - Name: raC_Dvc_K6500
+    Id: g=55b3e437d0c72d6c41d3ce72c011cfd0
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=19dd0affa7455b2988cec6ec36b5404a
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=45cc36f8f0de1211a1d1203d2325720a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=759c3daab34f8cd8537f53890ad2e99d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3a6caed9d10f11089116a9e6216fdcee
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Val_ActualVelocity
+      Id: g=7e75f0e5f86d88fd2774aef698f24967
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=4e1688825d67c56067d5ff024d5e6c4b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualVelocity"
+    - Name: Val_ActualPosition
+      Id: g=ae2b4489b16010d646477865e3cd100f
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=9b2b681fb2c095e1e606d758c03eb225
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualPosition"
+    - Name: Sts_Virtual
+      Id: g=3dfa12da1306f0d5e9a7da98fab40a45
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=78778b5a4a4e18d8482cf066033a2f2e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=fae3ee39852644336d94bbe80ec30e34
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=5ffb0a31dee4eb45bfa1fd92cb038d9d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=5f50be6418116203f08a36ee4610f8fe
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e2e3395e9f76bcaadec4c2f4e45d92ab
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=59b79e6ec66dbf6ae31203af80a2afab
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0ad0690229a0669306c8d83c0fe6c8ce
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=e7a626f703c2ccd047cbebfbbb98bf11
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=9047bd74231a0dfdbee05685c6dc4308
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=d61b0f4f9075b077023dfa22d066fb7f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1043aac6e3230c5fd30461ed6d611fe7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=7aff9b863d84afe9d217dbe2a70e5bd4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4dcfbedbf838155eba22e5e09d42fcb2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_NoMotion
+      Id: g=c4e6fa803e4a02e79e3e3d30ff44082b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b2d4ff8ccdcba88b4ead729f8b3593c4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_NoMotion"
+    - Name: Sts_ZeroSpeed
+      Id: g=0e362a845619b613e7e334876431b5b0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=af1980e2c7ac270b15c3ee7335d6365d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_K6500
+      Id: g=2ffd7cf4efaf22efc496095ea565ad9c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7f042fcfa1c44b413856f5cd28d9df3a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_K6500"
+    - Name: Sts_bNotReady
+      Id: g=85fb470c982c9fd6f41a356c4a0499ec
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=142ff24b015fa788eaa53921f6b40428
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+  - Name: raC_Dvc_AS284E
+    Id: g=603925f578ea9b75083f3ca93391ea9f
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=6641fdf4f36ac8a3283ecb29e6cc272d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=816dcd87aee4af2fa25c25ea1935889f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=da6464448d1ca0d175d476b7fcf755ce
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=90caf235a1e4e9b94b706367758a1691
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Inp_MotorFLA
+      Id: g=07c85b9780c12140619e3d0458099b4d
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=c5efe5243b717618659f69bd60490ca3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_MotorFLA"
+    - Name: Val_FreqActual
+      Id: g=4c284dd9e0accc4d63477c6a31e47faa
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=87348282ecf1b9835131d9c517221b88
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_FreqActual"
+    - Name: Val_OutputCurrent
+      Id: g=451b9732cb64bf4deff423dad27e2864
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=9a0781d6192094caee328b3275b6c55b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=24b149987e834d2ee0bb36f7d6cc118c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=cc182064a939905e6ef62c9f4b8aa91a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_Virtual
+      Id: g=9b10171a0e39e983dc1d246cdfcc89b2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=cb5dfdd272c98ccf88cd4d09d201578d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=0ac29556f4e7ec927458f4daf959121e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bffce70346ac3697ade12ae33aa420b7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=538a7cbdac160192ec9931107bf958a2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7b6783caa6944bb0f1f65dd606673e47
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=c27e53811e2ba4735a30df8a277972cc
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e3de161c78f7ea5903c8da47d344ffa0
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=41eced6bd2fd1a870fe6b439e2504560
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=eac1c3caa882bed9cf6a366bed7ee638
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=09c819cdba3e5e152a7921a684d2a7c5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=31fa05d955609fbc9021e699699a8280
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=400888fef411b17b3c57fd4712b356ec
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c865257c2b510b079e57fdac4717aeb4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_ZeroSpeed
+      Id: g=a37078aaf1cc632470538ebd0d88297e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7e1eacbf859dc05336de591d74c75e9b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_AS284E
+      Id: g=a4a8affbbeed60cc011d4c3147711c83
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=41410185984270923dfafce008eacdd8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_AS284E"
+  - Name: raC_Dvc_PM1000
+    Id: g=54078b1ba78c34fcc85b2ba5ac4015f4
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=f1b826847447ebe342467c93f609c584
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=fa5aa6864aad013cd759a7a1a3884837
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=1c5972db11d1c033064f4bee5806f233
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=5e18b3d2e774e1c4199f96c29ad513f7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Sts_Connected
+      Id: g=5ed7a4eafc8b2ff100a4d4a218d848bf
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3a7a3905f19f1dd85ec466dc02d806ca
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=5e5b2f11ef3f1e62e5533cb12039a145
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bb36146915b3cf94412e277c296b7e49
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=4632364f64222b7e2c326cef97b1a0f5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=574aa1fb98ebad197b1793e8e36f70d1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=a21e164682e5b5e03d4e0bf04329e573
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=6c43efed7662325be180a8e084674b35
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=899a0f6d4a964196c92d789eded692e0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ae996a5f8f958fc7b198bfe2c3f834ae
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_ER
+      Id: g=aa3d6e20bcdf59839600c04b8b46d942
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=231367df8513bb69644899d7705d31d1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ER"
+    - Name: Sts_Idle
+      Id: g=a8e9b8aea9821c34f317f42d97c817cc
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=6d4c63a44ecefd597a49d3e836d657e7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Idle"
+    - Name: Sts_AcquiringData
+      Id: g=d88f08bdf88db680d47ad64ae1d116f8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c1877f76bcd51b90a904c15a2bae5942
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_AcquiringData"
+    - Name: Sts_WaitingForCtrlResource
+      Id: g=c46b12fe8f68002b43c9e893400b8f34
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=d71304c86bf4bf5050f551feba769cfb
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_WaitingForCtrlResource"
+    - Name: Set_SampleInterval
+      Id: g=1cf43bff5eeb29dc2c9e27651d8cb9ff
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=dbc02beedb4110d9cd36ba22684663dd
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Set_SampleInterval"
+    - Name: Sts_DataAcquisitionDuration
+      Id: g=e1654718238af3c4aa08e64c23605f6d
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=c3700b907fa10f6cb2fd87b6bfa3c9f1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_DataAcquisitionDuration"
+    - Name: Sts_bNotReady
+      Id: g=f3737baf98670e076f5d77b13f61a90b
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=0609ebb1ef3137c691968d9fb4516794
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: raC_Dvc_PM1000
+      Id: g=142fb917ccf1af4b8460ececa17780d2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=84346ce95a72ce56ceeae69f66f0b3ed
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_PM1000"
+    - Name: Sts_Val_Voltage_Phase_1_Angle
+      Id: g=f160c0ca1eca65f31a59297ca5ebb3d6
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=575c8c98b6450073cf47d688089afcdb
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Voltage_Phase_1_Angle"
+    - Name: Sts_Val_Voltage_Phase_2_Angle
+      Id: g=77da50b4ba1e6ecad431410f903192a7
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=149c8951955880c312f51550adfed764
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Voltage_Phase_2_Angle"
+    - Name: Sts_Val_Voltage_Phase_3_Angle
+      Id: g=27f91165f8f36c62e995e4a7767fbb1c
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=9a0f03b2807b8f75e4649b59c4b2fd21
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Voltage_Phase_3_Angle"
+    - Name: Sts_Val_Current_Phase_1_Angle
+      Id: g=8bfd588f9bff7622ee037d28959d7310
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=dbf032a87160dd76e3c69f1284a040bb
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Current_Phase_1_Angle"
+    - Name: Sts_Val_Current_Phase_2_Angle
+      Id: g=c48694f133d5d2a10f91d73c14c49a01
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=cbf95b1aa8af20730903cfd78ec6dc1c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Current_Phase_2_Angle"
+    - Name: Sts_Val_Current_Phase_3_Angle
+      Id: g=24b11e86dd4c513edf93a2dbd5431a98
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=2b8477f6bedf91f74ac18fc55328b8b2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Current_Phase_3_Angle"
+    - Name: Sts_Val_Status_1_Count_x1
+      Id: g=6e67b54e358b865c5fa736fecec1e76c
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=f360f37db31dbbfa7b1f0533e44ced43
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Status_1_Count_x1"
+    - Name: Sts_Val_Status_2_Count_x1
+      Id: g=0e67608e207f78c6ab3451cd74410464
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=6d69cf764fed9a46e83a7b5adf7cb72b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Status_2_Count_x1"
+    - Name: Sts_Val_kWh_Net
+      Id: g=e88e8c9807ce4dc2322d4488dac3e57e
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=eee4c88ccf075230759ed7514a64784e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_kWh_Net"
+    - Name: Sts_Val_kVARh_Net
+      Id: g=4f1afbdfd31dbc179b60dab825dddf2e
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=5f21cc1e9df1aebebdd0096939725388
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_kVARh_Net"
+    - Name: Sts_Val_kVAh_Net
+      Id: g=0652a7b743ae3e079a711af3f756847b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=a21fd0a82060448fe08b830f7c6a0be4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_kVAh_Net"
+    - Name: Sts_Val_kW_Demand
+      Id: g=a129214ef34a1ea820f0306420b7a14d
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=37116e2abc9ec4f2502debf660fc87ab
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_kW_Demand"
+    - Name: Sts_Val_kVAR_Demand
+      Id: g=be7bba31738ab940ae96b2eebb63ec3f
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=b1572598556e1e8cb0aac419562d97e0
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_kVAR_Demand"
+    - Name: Sts_Val_kVA_Demand
+      Id: g=5cc3112a8c3435b036ea357e9b38837d
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=1d917473c43854e9774c6a1193de2e6e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_kVA_Demand"
+    - Name: Sts_Val_Projected_kW_Demand
+      Id: g=2f7fa0bedd034bf557eccddbf8525080
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=6df78d7882ca22f14ab10f76fd0c5e3a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Projected_kW_Demand"
+    - Name: Sts_Val_Projected_kVAR_Demand
+      Id: g=71939d4517946498cbc686f355f3308c
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=f5085a0e15867e0d98c7f89f9f7c39af
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Projected_kVAR_Demand"
+    - Name: Sts_Val_Projected_kVA_Demand
+      Id: g=04ecf5e9d5aad2f79a69c93893328e5e
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=0c6f8b23022166d3996f54d2ec578445
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Projected_kVA_Demand"
+    - Name: Sts_OdometerResetServiced
+      Id: g=faa766f22e3c431f1e462e185085397c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b115fd5cad9da5aba34a8c90846791e5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_OdometerResetServiced"
+    - Name: Sts_ERR
+      Id: g=754f611299a3b865645f0ab5a6bf2f68
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=fc20f76557e1b18ccd30f3351414b48e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ERR"
+    - Name: Sts_EXERR
+      Id: g=fdfd3d9307a16853ca426789eb52223e
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=dd69204534433218e359566e9d231365
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_EXERR"
+  - Name: raC_Dvc_PF527
+    Id: g=daf5b18c0202b3aa3bd5fef9e268f980
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=43e67bd23109b992f0fb543283f23cb1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4958b3b9284564ea31770adba880a62c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=9dad9c336b7bf585ad48fcb6467c584f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=42202f9b1b270b4e2248fbd75d654b22
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Val_ActualVelocity
+      Id: g=97a46a1567a67bbbb677823a0ccaf8ee
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=b87bcb4d1894d31e646d158622429f69
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualVelocity"
+    - Name: Val_ActualPosition
+      Id: g=24fdbdf8b7ba1505e0f5b5d4897643be
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=c74d58455a702a14f3a1f8cf3b1933bf
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualPosition"
+    - Name: Sts_Virtual
+      Id: g=2374333fb966e28cfdcfcad24cfe0c91
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bddad5e5547d5ef8fbac93a80eb3702e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=23660dac705aa17d08c138c4ee17e97c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e1908489d17d44de3d64c30f52baa59a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=0a0c0532019d6e1e20ac58de4801f342
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ba9b062e7f24d20dfd2dd93c61fa57b2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=3758dc95d955328fa3c1d837bf825e8e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=85ed999b735ef2dab61deabb3ba8b609
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=d2ed67eee4d8046abd475aa497e60dbe
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=20eadec66d048edc7183a0b37d0c3762
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=ad63b646b9c34ccae37c1e3026b37bda
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1e86fe1a090cdf057232f145d3ef0aa0
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=c339d881e05f317f1456850fdc96d853
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f4bc437ead2b250e126ea4237c37cee8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_NoMotion
+      Id: g=6a6e26443252f7c0065d0cf211a233c5
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=fcb58473cddb59ea500e70aafff562c3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_NoMotion"
+    - Name: Sts_ZeroSpeed
+      Id: g=cebe1f2a027706919e8edfc2504d5fae
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=fa1eb47caebe9b0b348d1157debdb4be
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_PF527
+      Id: g=8d54726b6b82e096035ac424841fb6d1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=9ccf1d06140790f8015e7be042f60f80
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_PF527"
+    - Name: Sts_bNotReady
+      Id: g=7ee5c178c3cd2b06df71d3d4a1ea87de
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=cb130a38a1c3f8f0708310a8b75398d7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+  - Name: raC_Dvc_APF35
+    Id: g=8f7905ebe9f60745689d215686dd38dc
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=fb1b6690294553ea7a9132d84a87d16c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f57c516a65e1595a2b22570e7f53b751
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=58b6854c194389b87be07dc299f80c27
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b51192068129b89db09de312b94ccdd4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Inp_MotorFLA
+      Id: g=104515219eae7a4b9fdf1130d6dbdff3
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=9c19454f2fc66c4d995c6f7bf302dce1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_MotorFLA"
+    - Name: Val_FreqActual
+      Id: g=a689ff80fcade1c901c0736c79001264
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=25d3e448c29f9397d29a1f5505e8a2b0
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_FreqActual"
+    - Name: Val_OutputCurrent
+      Id: g=fc715570ba0e3aff9286fd8237a7fbe6
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=041ad2354fc9cc3100a9f388295c5f74
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=55bcd464c85dc05578249e2e25ffc9af
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=cfcc6c8022b2a4f4f595f11a10f3c211
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_Virtual
+      Id: g=da6d42878fbe58cdbf080619f9ef4076
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=77418eb0341b00a384c5065a6b869a49
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=4806114df3a2e16a9457d2c86781ac00
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=36531f8b1715ced8eb0056006fc2421e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=3cf4e8cb5d9f8bdf0aa9333d201c3913
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=50025a592c54462c9e1d49956ba5ccaf
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=de9b3b8e4daed4ee7d2bf7184ee18693
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b8934c2af7474e263c476986c1246208
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=8f1affab41de3af0a38348cc7908b20c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=2819c67acdbba802a24b15c58d3c56ac
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=acc16bd5c341915a9755291d07bd3a8d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=af7c7729b50398bbf410acd4465dc712
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=aaa3229c4068bc4cfc3bc1eb9dc763a9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1fd6016c4835bab9ec21c1a10a0b19b3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_ZeroSpeed
+      Id: g=61cacac9dfe63a9b1808e3dc65762a37
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=6f2f13d24fe41c0dbb21aa3dc649db91
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_APF35
+      Id: g=f80869eaed2d5687cf0cdf1b8ef9b7f2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=37bc49dda704d348ad99e413a09a37b6
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_APF35"
+  - Name: raC_Dvc_SMC50
+    Id: g=4b67266dfb90ed4ec2a74728661d3c1c
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=73ebd4bdad54052e57b6c6ce0e4a45c9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=47018b4b621b80e6dc2e3cd40ecde609
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=b2ba43731edfc22fd2359889dd4ea64e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e0fc6ab98648a39fa7d0aa6efbd24ee4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Sts_Virtual
+      Id: g=81f2b08d6eb53dbe392b3a1b0d0db5fc
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4a7effb5bea5d91afa49c23da0ad2e53
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=54b61ab07eed48e9bdcf7ed7a517d990
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=2999d3eece97eaa1d4fb42864fb509ca
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=d2fd4f8b5661cc3bac4481032eb1734a
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=8c9012f77a85460437a4bf0b7a665132
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=1a6891284712f6c713a6ea167002fc2b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=fd60a21138de62a19dcc1ea62162e855
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=b69cff5dc19f541ea527eb65706dc2e9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=52d9da7e1424960c027bfbfdec87d1ec
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Val_OutputCurrent
+      Id: g=eaa271cd9965bdd8e686a15b21ffcbe6
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=8b7e85df16a96ed0be2759778c1a1c3c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_Ready
+      Id: g=b1820aca251acb39b8ac7a71efb85baf
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b1710a278142c8bef6815b6811f29688
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=f7888ea358c57b23b091a6da9d18a986
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f94446204b6aac85e45a8441e6ef78d8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_bNotReady
+      Id: g=e6f9441b9e586c8a2f814053d8d52580
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=a5d2f447e4a1c89106bcfdce266f6d9c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: raC_Dvc_SMC50
+      Id: g=a7e465071074de4de690352256e18127
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=fbf6313f4731d461d3d79595738dd9d4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_SMC50"
+  - Name: raC_Dvc_AS291E
+    Id: g=4d3d482b3977526242b6a70afeea9e3b
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=ae9989770243803fccad29de7ec000da
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=069da3e87fbbb93fdfea9c40a04a7840
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=98e01e593657bf7d04c71a6448db02a2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=99a99320b2b65f6b3e36eb73217be147
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Inp_MotorFLA
+      Id: g=4f626d1fac3a5f050e9ed9bc73962f56
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=7b62e9a5a00d38220c85fa42407afc6d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_MotorFLA"
+    - Name: Val_OutputCurrent
+      Id: g=543afd06fa6ea6acbcfe742b873605b8
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=c9d140b6992bf02728c5f9be9a77f6e3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=52aba7dd38707568e24eb6f25714cc79
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=b9a9b4cca55d6c061a1c7317d01b501f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_Virtual
+      Id: g=419411e3081919fc078b43feaa28e820
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=62bf5b43c940db702cf09301a1a28717
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=4f16eb1c352b0f1a5c9b6d039f844241
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=15e44324fe8c86a57c6084b8306c9456
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=7081f8b8a9cea1af612a4c90ff64e27b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1a1db360fa642ebc1c5aec862edf2d97
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=6968bff0cdb42189ed8f6f0ff48c118d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=d53bd7fbbd1229fa1cfee6ed0780d2de
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=2c62e169fed36533eeb32f0436405998
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=36da07a2aea24c036ef0b73338a17988
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=9ac0ca3b3b088ca98376b29177ef930f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=fcfe92944d82a3884b94e6e2211d0185
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=ebe01b9150a1cc470b61a8244b3df20c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b0a14fc42c544795d09371b0081231a3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_ActDir
+      Id: g=4ff2994658081a81cdda6193ccdac871
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3d8e21d0492250c38ebf864b68368b55
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ActDir"
+    - Name: raC_Dvc_AS291E
+      Id: g=9f3f7d37d4ef6f7b9d41d06f386afa16
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=6c552a3b0c140e44b461f3294c43d4b5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_AS291E"
+  - Name: raC_Tec_PwrMotionStateMonitor
+    Id: g=d8c9d98068f81770b440e536e3df7457
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=3a28cbe1220fabfff7b7b4a02ff3aec0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=05a959766474011bdf23d86426b648a4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=95264cebdd23f4d333cb52e430982369
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=27b5f34806777ab54fd9122fd0c977d8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Cmd_ClearCntActivation
+      Id: g=94e8be5cc19f9cd9bcc193f2e5af6033
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=eec53ed750e576a83903430327621f63
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearCntActivation"
+    - Name: Cmd_ClearMaxHrsActive
+      Id: g=55a9324bacf9ce0b4b6b491a20bb0272
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=98baaeebf597058d8428d24a4cf807bf
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearMaxHrsActive"
+    - Name: Cmd_ClearTotHrsActive
+      Id: g=f04ffca3efa3c878945631c7e62ac070
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=9c9fdf77c886df800d5715e080096590
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearTotHrsActive"
+    - Name: Cmd_ClearCntDisconnect
+      Id: g=85dacafc7cf3cc2ec030bd2a0ce9ce1b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a37765acbe4e5592406517620219eb74
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearCntDisconnect"
+    - Name: Cmd_ClearMaxHrsConnected
+      Id: g=db0fa08a35b5908b8d64390fdaa04e83
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=56ace88fdf1825cee0ce928ff76236e2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearMaxHrsConnected"
+    - Name: Cmd_ClearTotHrsConnected
+      Id: g=e4d04301fb9673f972f2a7d2af9fe181
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4893b4fc17bb484f82ec672ad6502e41
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearTotHrsConnected"
+    - Name: Val_Activations
+      Id: g=139e949b1a14ac90686c772830de3d34
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=c892a580c6258e0c2df65d1b695d421e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_Activations"
+    - Name: Val_CurActiveHrs
+      Id: g=a08ab7c6f7ad53e96f0a7fa340368208
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=d3d9483f5d6502ed8ce8f60a11ab2859
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_CurActiveHrs"
+    - Name: Val_MaxActiveHrs
+      Id: g=a00c500de5cb8285cbd35da094b162e3
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=da0bfa3cf67eea0de0fa826ffd173fef
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_MaxActiveHrs"
+    - Name: Val_TotActiveHrs
+      Id: g=e509e36cb622793122c38506638ddfd6
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=0f19f79494f1cf446a46771840a3bdd9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_TotActiveHrs"
+    - Name: Val_Disconnections
+      Id: g=8b6f64af7d6a5e6fcfd954e5cd3a029c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=8be4ef165c7fbda6e294e054a0faa3f8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_Disconnections"
+    - Name: Val_CurConnectedHrs
+      Id: g=cee4326405f105d7dbe23e4199cf7cd6
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=9d092601263838cd87b627436c9084c4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_CurConnectedHrs"
+    - Name: Val_MaxConnectedHrs
+      Id: g=9075d935742b2457c9ae4886802ec3f2
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=0a4863cd1ffbf0782abc3f55c30e5a9f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_MaxConnectedHrs"
+    - Name: Val_TotConnectedHrs
+      Id: g=a46b4689a659d35a4f187a4298bc1dfb
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=1f11a1fd37fc98821f447ce50cff0517
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_TotConnectedHrs"
+    - Name: raC_Tec_PwrDiscreteStateMonitor
+      Id: g=5459473e9b8b53a057644bae519aa0de
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a4c0197a49b1ca3f2ed3cd11d4ff3d6f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Tec_PwrDiscreteStateMonitor"
+  - Name: raC_Dvc_PF753
+    Id: g=76f92e3dac1d625e8804ff9ecf64dcdc
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=5e39fef7727796670c5ad979c04b7cf7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c5ecdbc8f3b536078d0d1897e3091e1d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=708ac94b40da3c32e497586b87057c43
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7e4c50c5aadd28c051f6de846a8974f1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Val_FreqActual
+      Id: g=ffb2eda140cc42de397ae8783d30cb06
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=e91edaa624b648cfa4503fc3f98a337a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_FreqActual"
+    - Name: Val_OutputCurrent
+      Id: g=a488eea74aea78bcb87aa4af5b377318
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=0f5ca50b4b41d1359d2d0c975a304473
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=2eb1d8f205b00622713469242e0b5e13
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=b00a4e0b43452498523e6356a410c09b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_bStartInhibits
+      Id: g=509f821cf43d0f1c6f041f3a8e5bd501
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=72e0ea50ac34fa3d041ab137eaee6efc
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bStartInhibits"
+    - Name: Sts_bAlarmA
+      Id: g=7b24b2e1ef807b78229b261921ee77d0
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=77caa3283671b3246441774cf75430ed
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bAlarmA"
+    - Name: Sts_bAlarmB
+      Id: g=fe948b51bf11c4cdd29144dcecba2c1a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=d273d85915e0f77dafca20b9b1b46536
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bAlarmB"
+    - Name: Sts_Virtual
+      Id: g=cd1056109ca3d4dcbfdfcf2bffddea5e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a6be734866efd243d4beee6914c9fbaa
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=052e3d2998b9cbdf2789bbc5756a72fd
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=093da85c75d8d4015704b8767e49b383
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=064d98dffb403efb66c249d164ea38fc
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c5b3a6110f8cb1632ef7962b9cac6dc3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=3371a9a6f83a45866815b266c0df003d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=aa9d658bf815f9155e85a62978af6091
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=60f4214cbc58482cb8f78d0727392be3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=00a22cf5891acf3f1c152bd93a3db043
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=c07196f66baa628200d6d62b51563e14
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=242434e7c75a2c9dfa7272e2d6e14a8d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=7cb16b29c7f28fecd05e1b541403f150
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=de0ddf2c41ac9fba90abc5f8546cd707
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_ZeroSpeed
+      Id: g=678008c831048db4d2e51901c0fba852
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=5c85b5bcd9373f70eecfb175351667c2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_PF753
+      Id: g=fc9d410bf5c02b0203b16cbd0cc99a07
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bf8814488eeffbd592e0d0d85fda6569
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_PF753"
+  - Name: raC_UDT_EnergyBaseObject
+    Id: g=f4ace9d94164c9be3f1898697a5e96d2
+    Supertype: TagStructure
+    Children:
+    - Name: ResourceType
+      Id: g=0317482942c9aff78975b46981f74b73
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=15686341da7abd90a841de13a1eb30ba
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ResourceType"
+    - Name: Capabilities
+      Id: g=abe870a1245e15b0caf46f20883a756d
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=ee270b3d9acdb738613e7a6ee836ef71
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Capabilities"
+    - Name: Accuracy
+      Id: g=0036696485988a1cdb66271ab56b3f81
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=5f1c63b0e01d83eb606dc14f3f791aaa
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Accuracy"
+    - Name: AccuracyBasis
+      Id: g=6a42ab7f3d623d34c81af60cfd31e1ca
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=94e2c129956ca84b3e072ddd32e6f60b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "AccuracyBasis"
+    - Name: FullScaleReading
+      Id: g=5e14f821a535d4aa38078f5b00b3d877
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=d8850d7699aace0f41706d56ce15d4ad
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "FullScaleReading"
+    - Name: DataStatus
+      Id: g=8c643c360ba3d76cde6d1e938633bf89
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=5b71b986f74f37de72a8445d44a35ec1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "DataStatus"
+    - Name: ConsumedEnergyOdo
+      Id: g=c256317cf5f76e474b9a88a5cefa26e1
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Value: [0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Id: g=39c1873c277dbe0b742e606ea717c077
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "ConsumedEnergyOdo"
+    - Name: GeneratedEnergyOdo
+      Id: g=003e5af54f45adf9a58f2e60f8ca38d2
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Value: [0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Id: g=95517e6a61679a9d0f5792e3efa9aa32
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "GeneratedEnergyOdo"
+    - Name: TotalEnergyOdo
+      Id: g=cdc4a6923b246ed7905c34c07d2c5f09
+      Type: RAEtherNetIPTag
+      DataType: Int16
+      ValueRank: OneDimension
+      ArrayDimensions: [5]
+      Value: [0,0,0,0,0]
+      Children:
+      - Name: SymbolName
+        Id: g=0d8c3b0791fd1ec79fc42b8b2d8a3660
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "TotalEnergyOdo"
+    - Name: EnergyTransferRate
+      Id: g=3ec33f657e799d2d3a037ca60e21754c
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=9d00920a48e03fae615f0d6389438e3e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnergyTransferRate"
+  - Name: raC_Dvc_K5500
+    Id: g=01ba9d47a5014ee6ed4d536b07b80372
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=b560ae1702059120327ea00310f00b30
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=77c96044e49714e3b49cb95d644cd65c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=714488554cbd4a54bebb9469c2dd3f57
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=39c3b840ab74c4bc0c2b69f313ce3758
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Val_ActualVelocity
+      Id: g=9b49055bca24f2fba89715ecc102109f
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=cb32b5ea5e5b422122675395bb529cb9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualVelocity"
+    - Name: Val_ActualPosition
+      Id: g=a779288702a037a4211b613476eead88
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=6be0085db05ce8db8209b3847f760453
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualPosition"
+    - Name: Sts_Virtual
+      Id: g=b57848b9ff4986b8103f9f3d9ec7c97d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=94d1b532b55fd50f9f3a1f7f3b29c1b9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=0f676702fecd7c632ed3492637d6ab49
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=167093a509f55fb09fd641dee9549d7f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=4e948bae9715ad0f2b2768dcff379423
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=d82eafa08af80293fd296328902d299a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=8c07ca4bb694fc009772ae30f1eed099
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=78fbedd63eea9d798a9258c0a08014e8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=70e42cad6ca6c89aaf6a681fb9b65724
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=76d529647a72597da7f91fc3f169b481
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=ad804a78f5785d8cc6f2108502fcebfc
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f1d8f8077af955c83825ab33011b869e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=59dda827ddadcfc606ddb774bdecf32d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=03ea13deeec220a6e0434d18d24dfa0c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_NoMotion
+      Id: g=b047537a01d24a0365048e02e9a33403
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3efee00195f776c9ad13e81e33f1f90f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_NoMotion"
+    - Name: Sts_ZeroSpeed
+      Id: g=0b527aa65bdc2d9708dde03fc9c75f7c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b3ef4658d2e5069a2a8b8d666facb2e0
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_K5500
+      Id: g=831e319fe28f8e51bb9e5d2f77dcc3e7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=6b65b5ec05ca354740ec095862e572a8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_K5500"
+    - Name: Sts_bNotReady
+      Id: g=1323eac8e8d40a3c68d85eff25949426
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=93f0e85b1f8e1943ba9861b5f157adc5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+  - Name: raC_Dvc_AS294E
+    Id: g=6f4e33c25a99d3a6317a89fa4724c05c
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=a12ef21d855e2e996f642c66072eb886
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=8b507d0d7c43ea6dedc8323a2edf5714
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=61bbcfca4a6c460c5b236a8d77499db8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0dc540617756a1fbf3c19194331abbf3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Inp_MotorFLA
+      Id: g=ccf9a26ad2beac5857a4f4c3cb3be836
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=1e44c408f6a76a26370adc3892bc16ea
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_MotorFLA"
+    - Name: Sts_Virtual
+      Id: g=0575fae27d0ca11a2fa886ffd4651589
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a75eef23a74fb1a14bbf3a003664a1e5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=ae52c448b953c4c792aa7628df73285b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=5bcb6bcb497d3a09160ffd5ce138fa15
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=42b49bd32c449aad2b3d6f5ce7e8d29b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1b537aecb1779724afe3d907026f284a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=4ce76df57e85542e54cdb1ba40b0cd87
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3a11f17c3b9b01d853a43aa28088165c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=b59c556dbee09c3e8cf3024e196fd240
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=183faa536d50d944d6c460d5dc324a2a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Val_FreqActual
+      Id: g=085f9b0ca9e4b52898284197fe2fb8cd
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=8e1f23df0fb9387280af823743a58f5d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_FreqActual"
+    - Name: Val_OutputCurrent
+      Id: g=7702158d218bee063bbfc1a8f2693507
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=ab2897736bdb3e11be31812dfcfae4ac
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=5f84b7599df116e0bd553159e6fda41d
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=686eebf9b3e87826fc562f9693f5b869
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: raC_Dvc_AS294E
+      Id: g=681ed5e1551b1d909d3b0e0fc8c84e68
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=df9c5c870abddf272ce7e0ffa448c229
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_AS294E"
+    - Name: Sts_Ready
+      Id: g=c67814720dfbf5e83951369a9c85e7c3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=74937e139e251bebc8e6a7c260c482e2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=2cf0cf513ea328c6861e46f136d57731
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=9360c347ff79a5bff33d62a107d39da9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_ZeroSpeed
+      Id: g=0825e9504683033b6ff8dece68e21ce6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=08f5bfc7229e1596d4b3a4b516640083
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+  - Name: raC_Dvc_PF755
+    Id: g=e0e099f989eea30bb9970f5ec63a0bdf
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=023a5ff32ee771bca6a1d725df7f3497
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=22f76549283bbdab154fb9deae8a7c95
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=82a6dea7e9bfd53c5bbe4289595b82a7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=2900baaa31cdec0f63836d8818298c08
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Val_FreqActual
+      Id: g=9ce07a7d592f1ca8c44b37e75c848e23
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=e20fd57fb22b276217eb7aee0ad9fe6a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_FreqActual"
+    - Name: Val_OutputCurrent
+      Id: g=62026b2d31574a432e2bd9246cafae97
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=41acd842bef35950b7c8a7d8d6a01338
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=f08325e715130341e766dd968bbffb18
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=509c17867667078df59c8e6e7575f827
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_bStartInhibits
+      Id: g=a702b59546129a43d41d605b0a6c089a
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=629dfbed9857aaa2fe9bd68c650c90d1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bStartInhibits"
+    - Name: Sts_bAlarmA
+      Id: g=d681d463b63d5eae62e8219b070f5564
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=cc6f1bf91de0b3acdc2b3b05f29b609f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bAlarmA"
+    - Name: Sts_bAlarmB
+      Id: g=5dd04369a1da4a036d420aa314eaac78
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=84a35a67f2901a0fda706f045cd25499
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bAlarmB"
+    - Name: Sts_Virtual
+      Id: g=98d8e94ffac7907e3d0d058636ec9974
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bcf502af5cdb4def0391420713b7ffcb
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=38c1d7109cf2724c75b2177376c87287
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ec6a4424acbd5d79aaf318b4a6cad15b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=4ead2bfa259a55e124deffe8a83347e8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4e1d02ebb81ec1ab7e6e0f164a44443e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=764681df717e40c22fbf727032d47d7d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bb3bd7fa73ce73ddd7757043e7a962af
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=b267dc85c583940253c1b0d4111d5b29
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=70125156343598dbf12fa33d540dcadf
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=7b2f87cb38391890d181462bde71eae9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c41aab27348b2fc1f8445baa194e9e30
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=812ec92b89ec7957d69d3b906b5ed441
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7115a81bd3add87b6746fc6cf77ba7af
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_ZeroSpeed
+      Id: g=46c5e3b327d35ee38df0709a69885d6b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a9ac031f12455523b030dc0ddee94983
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_PF755
+      Id: g=e253f70825acdd4f0a70063183431260
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4d2bf9209197f6fdc24938cd3432d98c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_PF755"
+  - Name: raC_Dvc_K5100
+    Id: g=8c4e818c7609ff4c2df0da5a470dacff
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=ada261b38dab9e5bf1a69c3d2c59a94c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f5a85e188abc18ba14775d42ac0e29b9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=2845cac3bd2c3398d837b7ce35bac2c9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1f8980478563d7845d21f5dd5e1bd825
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Val_ActualVelocity
+      Id: g=2964c265f3d26e3241520dfbfb42eaa6
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=39ea91cf48d9b8a3427ec8d9c839b180
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualVelocity"
+    - Name: Val_ActualPosition
+      Id: g=a8cbe05d17b8071a6e5fb6c011f92791
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=7b553520190aef2d628303075946c443
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualPosition"
+    - Name: Sts_bNotReady
+      Id: g=d654597c9cfb78d9019da1d087c77dfb
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=76f22b85a770b99cbe2c03ef18536138
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_Virtual
+      Id: g=e75ba160325d3c4ad1c64c4cb668e21b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=66411111fca35dcd45e4497d3e32f7ec
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=1a494a7439fb8769f60c5a39295396e1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b5535b39b8bfa1bb81c209fd78e94990
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=5ce79258a0cbb3a26920b25a420813be
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3b12bf0adf488cd8ac25e28ed112c183
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=fb4ebd96968a38e0d92a068133d61d4d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=092271698d150dbcea949e4be536d90d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=68cbf49ce41f82492f9f516642c77551
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=77cac588e8624daf58df2dbe2ac29d06
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=75ff4cb4f201f15b2a06a9e7fe2d36e1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bc89de6f2a647da8ea7e77bd92d632bc
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=1aa13083fa5d8c46837f9c14c8649b2d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ddbf8ceb436f00a0f4987dd6da41b8d2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_ZeroSpeed
+      Id: g=db4693fd51404ac52ca4ff7b4c3eae0b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=5bcd9fc61cf7423c7d1d0e69e50560f4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: Sts_DriveUnits
+      Id: g=fd8e002550d6783e372ec33ff656f484
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c6ac0cd8a8d677b4f5794d1dd033ed02
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_DriveUnits"
+    - Name: Sts_UserUnits
+      Id: g=993ccf172bb025b5facc956b872f2648
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4b47a5cb4e5e6e10942df790716c723e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_UserUnits"
+    - Name: raC_Dvc_K5100
+      Id: g=ea495e66c8fc35d12920e3e2daaddae2
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1096b1548870c67add5fff4070f434a8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_K5100"
+  - Name: raC_Dvc_AS280E
+    Id: g=158daf82be796a108d81f96d428b2c0a
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=53d043e0c08ef9109358bb39735b1a4f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=da3bbe59fd90a1aa533ab881187824a7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=63f6c2dda1cb49944c77e3b943b3dae0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7b53fcf0a530c3843b3420675c0ed555
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Inp_MotorFLA
+      Id: g=23a173a75cd4157cb44cf348d557c6fd
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=d4f97afb4292bad87fc5642dc968cc47
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_MotorFLA"
+    - Name: Val_OutputCurrent
+      Id: g=63581606675bac6075133d433ca2e365
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=75eca6e7600d340b5305c83de037b3d7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=1e6f07fcdd6277b9038ae9881cbbab5b
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=f3e5f79db7a0da950fe9ebee433f2f1f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_Virtual
+      Id: g=e29281fb413bdb1a5bf638328fff583d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=585585bb5aec4174dc8be306874e02ef
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=ded068d4d08e1b218e378e10c1f27185
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=918c2b209ffada5e3ee278667620f2ff
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=b196cf0b87d4f19ab3fbae2b356cd207
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ca15ff7f32c037a1b9de16a4d70f9086
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=5bdb7068e560e1f71b290db4b01706fb
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=28498fcb6791da3f6ccc63b999f07704
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=0718cfda0d8ba34eda519e53bce81d65
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=569c70c5f5ba09d470cca1695ef927f6
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=768c48b9f0bd0b8221d01344fcc39fa8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bfab1ea871aae617ee6c7db87fa96b3a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=22a5a90d65249431b6a96a782b29d1f1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=792321986475ac0fca71aa1bb873c0c0
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: raC_Dvc_AS280E
+      Id: g=2f5d0d5bcf973ba0b6ed644ccb064ea6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c960dfcb2e5f6a2e6810646a47f24899
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_AS280E"
+  - Name: raC_Dvc_AS281E
+    Id: g=66dbb7dde2324b40a5c8977d4ec03e2d
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=3041f30b4fa5f81e272694ceac172414
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7e74934266d2b5727307d13665b81796
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=90d5a0a39e5861a08d731122b1436a1f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=34065cb0c7a19d8ee7d487fd9ff1d146
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Inp_MotorFLA
+      Id: g=52f930091f6393cc2bacff57d970976f
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=b1f2fbc73b7a9f380dff950be2a0637e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_MotorFLA"
+    - Name: Val_OutputCurrent
+      Id: g=03615ce71d6018a667c45520b3f5ed7b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=c9ef69f680e7aaebf49ffb5a18b9bf98
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=8b70e283d4f1e1166bdf44eb18f45764
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=cfa6d753685b02b666fe5a08463ef1b1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_Virtual
+      Id: g=8ffc1daf4198fc41b2a3f5e815c18c90
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1938e9a5f5d7e7366d063ae31c458426
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=072b5cee965e404b9191ad6d16ff4838
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=6feb843c71b42c9b9d1a163f8e707506
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=83236409d11cb28f39c51d6be1b31d5f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1a10b60079bcf3a4d99c6bca9c8bf661
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=c168c25ff1ee0f357d8b7a63dbd08a64
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=852486d70e4cbbbef6ce465dcc0810dd
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=cfc003e977b6bbac408c2812d3695f4d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=aa855c516762e353ed02a2c2f32144e3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=31bcaa9b347d4ec88b5ef0ca2328706f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=cedcd5e1b78e54b1fa4d74623c63a4fc
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=89d7917bb03740baa51e3fdcc371cf0a
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=cc667091b781b546919a6045f524fb04
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: raC_Dvc_AS281E
+      Id: g=ba38e51a87496f74010642ac61d8545a
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=daaefdc9c4e50af8c7eb1f46492fe1d9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_AS281E"
+  - Name: raC_Dvc_AS290E
+    Id: g=081313b59bace5f1573c7c62169e7f8f
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=b0b2254617a49af6d5e024a2e2bca0fc
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ea28593df9b2523019b8d627bf2c2d12
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=59093a06e8fb4777476d1af76fbb44c7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=809593095aa5e2bdb5f3f1bffc017fd3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Inp_MotorFLA
+      Id: g=c4006da5551ce7860aa136a7f6a8e112
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=8763d57660c88433af95549ff87e9fcb
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_MotorFLA"
+    - Name: Val_OutputCurrent
+      Id: g=5f5599e47732ca099ebe3a68415d45cc
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=473d5138bb1dc5a9c10f238bf4cffd89
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=76d286467dc96d8e60b5f0f431ca1d7d
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=10c08242c719de6b1b02868a4683b4dc
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_Virtual
+      Id: g=91c2a56198840d4eaa0737ba340980f9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b39dfc28245e3128253085af144c1fd9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=a65edbadb1fbe20c0eb9a9c1f601337c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0e6ead0e04ec2a7eeae3346f8276c287
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=a84d340c6dfd8e606b406bbf865814f7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=cc18b84cd13b72d677b8bf6638902f6e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=13a2222b97b640c9b226076834db325b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=d833e434f134409065ab86a438d88fd2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=5b49fac1563c3de497841ad33af5911d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=d8c4f869ba44ca28b2ae10e7b405d266
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=9d5339f107aedb188fe556374e3879cc
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=44e42dfd9045f057c67f6714ab78f080
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=19f26f85f5ff13be30864e0a8a66b16f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bb984fb66545554ecb802e4d183deb6e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: raC_Dvc_ADFramework_DV_LD
+      Id: g=1a54e512d59b2090aa9def831df71784
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=66d30ab40908274500ff4423fbc002ee
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_ADFramework_DV_LD"
+  - Name: raC_Dvc_K350
+    Id: g=c759f3ac2037a4c6cf8e83252e6e57ba
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=3c4da94c425433a9cdd51f77f81ba86d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0f22e22073bb5ca842efb772107a3a96
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=fa37cc86bf2b478ddbe24aacf633b7eb
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=5ab359f4cc4e5b14330985c33e2bbbfe
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Val_ActualVelocity
+      Id: g=b9319c96ba0525bb393d058811e34605
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=3d7059e28174c4797a320fdc43c2c939
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualVelocity"
+    - Name: Val_ActualPosition
+      Id: g=027ee106e4a05343945ffd5a964102ba
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=21ae3034e558b5f9c87103c99888c1ca
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualPosition"
+    - Name: Sts_Virtual
+      Id: g=6401714c89b6b47740e9805422b5991e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ead18609974f8fd88fa82a80ed673fd0
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=fb111df7bb4a7cb62cf80a254dc9b6ed
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=6b2156c864c687634b640228c45c90fd
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=77715858378d6f4bb7c6369c5b1d148b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=07251e5800ee7b685b59d4f5ebbb19d8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=0547b332bb653a47ee9809482b1ac395
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=024aa7e1b863464b7e45d67dc3b823ac
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=bc35090eee27ceb5506b6dda5801bc58
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=92982655818f59883fedcd44df416d9a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=867a25524584405e72e1a2ac4a6a7064
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a3c4e0fef4747b209db5b1e46735fa4a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=43a7ea3a401db7ace441b366889ed18b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=376219be227911edfa512a5f0ee96093
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_NoMotion
+      Id: g=885655789d9a98e62a5e3f7c3632830a
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=44e4578ecc1ce1ad8f5b0d88964747e5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_NoMotion"
+    - Name: Sts_ZeroSpeed
+      Id: g=e557b3562d26e18688cc96a174c4b118
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0e06a302fcec85563146c56d71b5cd41
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_K350
+      Id: g=72c05dc127189c736d8c055a19f2a776
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=5a92f27c9d290a7eee2441bf0947f2bf
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_K350"
+    - Name: Sts_bNotReady
+      Id: g=08e1ea505337c6e7e2e0bed62c6c76f3
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=3c16173c5439adc201cdd52dd1b12dd2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+  - Name: raC_Dvc_K5300
+    Id: g=23ce7ff611630864f809b299d04dcda1
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=24eda15dedd16ee45d57428f1242842f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e7258741666c9ab12bd61a8a96bdbf7b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=a0d92aa53b81867798230deaff831cbd
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bff39b725a31afe626066d4590d44785
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Val_ActualVelocity
+      Id: g=80e2da7f85a41bbee1f1615ba054e118
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=86a67751a0d2840b254bde10909f999c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualVelocity"
+    - Name: Val_ActualPosition
+      Id: g=1c2c80cdf24d8a756ff8e52ebc1d9d26
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=cfda05f4efdfbbe205a722ed9ff7460b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualPosition"
+    - Name: Sts_Virtual
+      Id: g=6f1d085ccab09a147c06d0b552adfd15
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=cda250feb5acd0e2686e10dd3ac48d6d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=8388785ceb436e23fce417e9e1e7c0b8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=8f7d97aa1efde52595d436f04057c931
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=4a40ba3efcdbda95310cc1a392ab5763
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=10e74abbae09769356c2dd945c827209
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=ef02fc2524e83088e46d607d8922bbe1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=661e7ae3abdd3fc0258dcc3c11b16509
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=8c5be2d471dce5cfc3e22b43232208cc
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=de76f7cc2d645bc9b66c241c401c3a1c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=c85f7f647f64aa127127f75e9e6c76dd
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=81a5c0b548f624272c6213ca649291f6
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=e95ed72e9541b2f634e1af89ef460954
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0dfb03352559651c16711d0c03ac1f13
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_NoMotion
+      Id: g=20f30f5a3b6cff1d4acb5ef8c7b1d233
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4cdd900b76c2379a30d2d3c8b5a14d4b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_NoMotion"
+    - Name: Sts_ZeroSpeed
+      Id: g=d90644f8eb46eb3aea713c143682fbd6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=18f5b26d1b4e1d4a7a41b8c733f5f3da
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_K5300
+      Id: g=c0ff26455283472666d92bf0925838a8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4dc60a964bcb5ab0f5261c9d719a3146
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_K5300"
+    - Name: Sts_bNotReady
+      Id: g=2bcff789a3b389b3c7b541445ee7ddd7
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=f7d0168e15c04adab5bd98b9e32fcdb2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+  - Name: raC_Dvc_K5700
+    Id: g=06747090a48dd148aa9944c604538d80
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=c70d93e88157c8b6c809a744950cabe3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3092b4f4c096f5c3ee698fac90b1bca5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=bdc6152ddd9ccfe2f10d498e2a129b9d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0d7bcf204b0451b0c78e1a213186a5f2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Val_ActualVelocity
+      Id: g=11ec3c3abdc0107e7d8aaaa60d37a44b
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=4b5956fd73cde6e8ec25a4f0c0e81ddf
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualVelocity"
+    - Name: Val_ActualPosition
+      Id: g=027425e0701b726ca53efe9f88aac15e
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=e84346d62602c6f6ebe3c2c441294b2f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_ActualPosition"
+    - Name: Sts_Virtual
+      Id: g=6fe0065990e81071b6a641c3ce3cfb24
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e6ac99e235c2cf3d1cdb2216d947e86e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=ca44f62ab9a3f74ddbd4e0a0d2c3ff1a
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=349ddaebb153a8d18445da24892f7e4b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=2331a3f5ce63b3b4b0750681e732d1da
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a019d3aedf7e6e594a5b8bd2a9e639cc
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=24279ce1dea5d748141a81068235c82d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=da767a5407ff773fb001a5b764872da3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=4e7804dfe07191ead588df86ca3be0c7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=96e526751d45148a6b96e2226f30b922
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=258dfdf334027fea2aef080689304c5e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=94b9d325621c720e0d719764145fd2ea
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=42c8291ff17fde4ac9b30656fe660981
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=9fc2258421a3f1c4269ffe0f9d88bbe9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_NoMotion
+      Id: g=9ad72c687a0295f94654b0661700dd64
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ab736044b4672a158bdf1d61920e6bd4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_NoMotion"
+    - Name: Sts_ZeroSpeed
+      Id: g=083e2e228d7d4235e1d8937f28ccbe63
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=20436f1add16ab6db4b70ac927766b2f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_K5700
+      Id: g=b2ea70acc4c2132c516106707eeef450
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=93a498588116e94b209c87294b846f81
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_K5700"
+    - Name: Sts_bNotReady
+      Id: g=200666187b4c5e5dbf21c92acc97c4c0
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=f66199db8476207ec96c16c8cd28c8d7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+  - Name: raC_Dvc_PF525
+    Id: g=beb6704c24e9bcbf457daae9a2b56dd0
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=3712fe04b16b01675db7cbd21ababfef
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ab9e026844677378aaecdbf6c0a81f01
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=78d7fb18791eb2f1e4f7f3b56f494b8a
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=8b1b772083c2f2690ce7373a156bafdf
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Inp_MotorFLA
+      Id: g=53fef27f5a1ab5288b45bf761b9c51b2
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=de92127c4d9ea63ccdaf5f3da340138d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_MotorFLA"
+    - Name: Val_FreqActual
+      Id: g=be08584e6fe779c8fccc73cff133810e
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=15f543315d9c37ac740a52a799c01bc3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_FreqActual"
+    - Name: Val_OutputCurrent
+      Id: g=a5f877dedcd0f89a9067c016dbbdeceb
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=46ba9c2f7b6f10cbfc94258745a2ea4b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=6b137c06d9ea57477b5b9ce5dc7dffcb
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=2cbab2525670016b54b34cc4964e5e54
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_Virtual
+      Id: g=b4c0d010508e0ee0783a2730a8b2d491
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=6985a587ce632356ca1f7aacb9f7bcf4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=7908c24fbf58134eda4303ab8042c4e4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=9c02122451c854c7a5c5907c1f180e51
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=103cfc0d1db9b47bd15be850dc585938
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=334c45cc28a9d04ecbf444050db92bb2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=2ea3eb164806a0e9088e63da64be1bf7
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0ca908302bc754f95da1d1c24469f1ab
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=7845c688dddf9c15f7d247c214617f2f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a714356eb2001090a1e53f89c8af6566
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=2b7f68965ac7f4c374ad1b46655bf1f9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c9a86533058b31a3cb1f7c40bdb663eb
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=bad1fb4b85e80615d4b66b98cdb018d0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e676950da9bd75c8291f40b295f037e8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Sts_ZeroSpeed
+      Id: g=3e9aec59b1d46d5d89314c5051388ad4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b80a3f43edd26e422f54c9ebbe00cd45
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+    - Name: raC_Dvc_PF525
+      Id: g=4d9023aa085225578374815359354740
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b8cff3a2cb7f281c08fa9b71a9b734c6
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_PF525"
+  - Name: raC_Dvc_PF755T
+    Id: g=6dd789f3b7a64e25097a31ffa60f26f3
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=3cb8b263bf7c2cb63d7c689d9c23ac3e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=fa9dd5ece96e5512df47247004455dab
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=93f67f677945d044738d55b6ccabc46c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0032d10514a25d938988b2c10961df7a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Sts_Virtual
+      Id: g=e5bd0fdc2adc69dc0bc83cdf98c5b58a
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3dba483cecd03b27824c9dbc58b285e9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Virtual"
+    - Name: Sts_Connected
+      Id: g=ec529455c3a9b141b3bde87d8dd4a23e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=48f02b668159ac4f3629c1f0df9b7e57
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=674b04dac4c8dffa2ef3e75538df898f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=020d84dad48c557c50c1d0b7119f0f79
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=8ef4d57bc773b173ed234a755d1c5914
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=5e6f43b5c2483e6a35b8c0d90948ca03
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=3554b2ab775d4f0d04d728a22fe08eb9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ea310db9870239e485d80c9dccc19238
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: raC_Dvc_ADFramework_DV_LD
+      Id: g=4ce7afd81df2dc6d47acedfd00e04f5b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e47aa805618485ce0a0d6b7fc690c59b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_ADFramework_DV_LD"
+    - Name: Out_FreqCommand
+      Id: g=e26e8a8ed5ba4a8767eab715202f4554
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=840da75a5ec6523c4284c530acd04ed7
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Out_FreqCommand"
+    - Name: Out_Jog1Speed
+      Id: g=e29e23f83abb68bbf6188beaf56290e4
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=17edb988f1074fd02463c4002714651a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Out_Jog1Speed"
+    - Name: Sts_Ready
+      Id: g=3b65a21c0f5fd30a87cc6808ee50d4d8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e05b044cadff23b71e64a33aefdb2dde
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: Sts_Active
+      Id: g=d94e7edd4e6e0fbb89dd3aba5a7c3675
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=95c21d3dffa095f5d9b511c686785280
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Active"
+    - Name: Val_FreqActual
+      Id: g=1e4d580b209d9f5a7af769bd55c72e0a
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=2742d3de3b7ba86f6fc5a9151e2df6c8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_FreqActual"
+    - Name: Val_OutputCurrent
+      Id: g=e80ffc4f7da0981570fc8ebfd464e6c6
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=6de56e8e61adb5a93b7fa84b9df05dbc
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_OutputCurrent"
+    - Name: Sts_bNotReady
+      Id: g=f9a592d414b3bc056fb3ca31e4a53178
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=eb1b43aa470f4c77d2dfb226c9706526
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+    - Name: Sts_bStartInhibits
+      Id: g=ecefedad52d1bb0484155ea5a715ff45
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=57260a8ca1c909a5a172f7a5924a8c22
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bStartInhibits"
+    - Name: Sts_bAlarmA
+      Id: g=20a6b0293705bce5302cd1a5ed4a7f66
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=15707de3d1183d6ce979b6b4597a3a63
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bAlarmA"
+    - Name: Sts_bAlarmB
+      Id: g=de4d9d32ac1c985b9ba65f5c7140b329
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=8be2af10dbbababc583c1de2497a0dc5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bAlarmB"
+    - Name: Sts_ZeroSpeed
+      Id: g=55ef1dda2d38db5b5048a3d5c0142c5e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c48606b2657b4d6e1d8a89c36613a954
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ZeroSpeed"
+  - Name: raC_Dvc_PM500
+    Id: g=7d4d96c539dc0d5f3fdb2e2809ba76eb
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=c23094c883c3958b1a22417cf84379d1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=d2b2fe5d4f38a59b0cf4039eaade1204
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=ee2954c866aca4cabff7b4bb9a0af203
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=eee4a0ba4f97512d6ccb7e348f8711a5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Sts_Connected
+      Id: g=adbf163e120be8d3e9f37cded275993e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=135df74a604c759de8f69658d946a2ff
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=6955a8e20e19efd8ed8af67710d0208e
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=91c05110e1950e41db2c54902b6301a8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=d8d5d0b081b04dfd6e3f6289f4283217
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=acca7ab2454bbb7532d92970753a1141
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=825e82051c0082dcf77e41a19335ebc8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=53eea4443acd5a43040f15112a6c7110
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=ba58f196c321a3baafb233cea93e11c4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=70044aab5ec5e3641ecddbbb8e9f3704
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: raC_Dvc_PM500
+      Id: g=8c92bf65f823711ee3bf359ab8df61ff
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0afe92a396ae460bb2e61eb0eab9dfcf
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_PM500"
+    - Name: Sts_ER
+      Id: g=666b2a7810a1b84e12c2be92043250be
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=97258f9bc83464b01265d0d7e3f0c244
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ER"
+    - Name: Set_SampleInterval
+      Id: g=517f399ab300e350c85dc3b1842391bc
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=bf26b9e355363a456490785df667d091
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Set_SampleInterval"
+    - Name: Sts_Idle
+      Id: g=252b515be99c8d8f5e792968302cc1be
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7014ae01a9ba8e3e354457cbd9eec637
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Idle"
+    - Name: Sts_AcquiringData
+      Id: g=e16606d2308bcdf82183e4d82e24b9bd
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f931f7f81ed291829dc1d728a3dd2c9b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_AcquiringData"
+    - Name: Sts_DataAcquisitionDuration
+      Id: g=37f1eddbe325f065e3aa81c4ab4c8fbe
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=1b87d2a4b8bee3bc859f5b83a563a080
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_DataAcquisitionDuration"
+    - Name: Sts_WaitingForCtrlResource
+      Id: g=8c236497154fce583d4c59766656f131
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a43e85aef659888f396887e25bced401
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_WaitingForCtrlResource"
+    - Name: Sts_OdometerResetServiced
+      Id: g=2d6a494dab22628d19d25fac50178c1c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=81ffb32a5be584bb5ea0a692db04af79
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_OdometerResetServiced"
+    - Name: Sts_ERR
+      Id: g=1cafeaf0ce095e6a6032240c0182abee
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=736c7cd98ba50c9875366853d39a967b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ERR"
+    - Name: Sts_EXERR
+      Id: g=d96c006ef65b74017e2092c271e4a86e
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=f80c9f36ceb2fcfa92250038963dc25c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_EXERR"
+    - Name: Sts_bNotReady
+      Id: g=ac1f2525795eea8b012fd5d7e253dd70
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=b12015c192c18ca9edd4944a4f9aae5c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+  - Name: raC_Dvc_PM5000
+    Id: g=76dda9308239a60edc5f77e59c852c8b
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=f207df9af0ae9d33cb4b8f711477ceda
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7f70e0e37eb88898c4d2a565cad16322
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=2e80b765c6eaf6891b59bf5586920fe1
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=a36dd5a285c841c654e50e0baf3e2a81
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Sts_Connected
+      Id: g=99143064191313d65ce682fc4fe1f0fd
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=4f7bee5893f011d584c013430adfa0fd
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Connected"
+    - Name: Sts_Available
+      Id: g=1469af3a5161ade966e14eda89b0a813
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=3736324686b38397f695e629d496e6d2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Available"
+    - Name: Sts_Warning
+      Id: g=7b64e5903f46399d58cc6e5582234ed9
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=7cac4a803c6421f41cf0e694ef31ac6f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Warning"
+    - Name: Sts_Faulted
+      Id: g=126553f9b877e10d1a702c76232c84e3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b4c53d7d1565b0ff72c6541272b39e4e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Faulted"
+    - Name: Sts_Ready
+      Id: g=bc8f5c390bffdaf124a0de211f032a74
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0f50c14497e2f6fd064005c3c437a6b9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Ready"
+    - Name: raC_Dvc_PM5000
+      Id: g=312a95449a7579a996cbfb7249241f02
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e79145262fe7527128bd122cf66f7781
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Dvc_PM5000"
+    - Name: Sts_Val_Voltage_Phase_1_Angle
+      Id: g=39bc5199207bc3e31b565e31a01d4ab4
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=3c72846af89a84b66a948b24f07cd420
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Voltage_Phase_1_Angle"
+    - Name: Sts_Val_Voltage_Phase_2_Angle
+      Id: g=1474735e286449bc70c183e536fd6034
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=ab782e5c9e7df56b7246dafd19b331fd
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Voltage_Phase_2_Angle"
+    - Name: Sts_Val_Voltage_Phase_3_Angle
+      Id: g=1b8976fe9271e550cb00cff32f7d90b0
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=dc54b3050a03f24d0c6fd263946dd8a5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Voltage_Phase_3_Angle"
+    - Name: Sts_Val_Current_Phase_1_Angle
+      Id: g=d98217f1bca31fd9fce83dd2edec463f
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=3ac1ff0c63f2e43096368facccdae5ae
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Current_Phase_1_Angle"
+    - Name: Sts_Val_Current_Phase_2_Angle
+      Id: g=2fed58813f17aeaba44fe75c6f1a0c35
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=5cd35ee903a5b695cc7b663fbe5c6798
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Current_Phase_2_Angle"
+    - Name: Sts_Val_Current_Phase_3_Angle
+      Id: g=8db48afd9428b48f97297604b5081dad
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=9af3be485740730fe7a0672bb22913b2
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Val_Current_Phase_3_Angle"
+    - Name: Sts_ER
+      Id: g=c5370a76d96a70610f0f8990473d7d23
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=8082d5e2f6f712b3ada35efab16aae97
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ER"
+    - Name: Set_SampleInterval
+      Id: g=ed1045c3d7698bf3594e112a0ebb18c0
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=979f2d70c8b8e9fab8ab462e77fec9b9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Set_SampleInterval"
+    - Name: Sts_Idle
+      Id: g=e96545ec62cc9806248626a2140560aa
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=8e6b281f482436378d9d2e3ec77cd93e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Idle"
+    - Name: Sts_AcquiringData
+      Id: g=c1ab31e58f49b70d4e08e7c48dbd0258
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=0f1619ca65c90bd04bd02dc56725f008
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_AcquiringData"
+    - Name: Sts_DataAcquisitionDuration
+      Id: g=02305464a6d167fb2b22c959eb9c5843
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=cb4e5f39ffdd4f7502368dc1fe879a74
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_DataAcquisitionDuration"
+    - Name: Sts_WaitingForCtrlResource
+      Id: g=3a7c5abd289aef6948b0d56919b14724
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=5342634208a99e2f0fc10dc36e6196e9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_WaitingForCtrlResource"
+    - Name: Sts_OdometerResetServiced
+      Id: g=8f86401072fd4d761e9974cde4e6250f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=8586a5d26ba3aed09861c82b850ea492
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_OdometerResetServiced"
+    - Name: Sts_ERR
+      Id: g=450a69d9237f7143b298a2b6c3f1333c
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=15cbeb2ea614a33fffd6f72b7965b023
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ERR"
+    - Name: Sts_EXERR
+      Id: g=55c87e61e2012be3872a3cc2a4eabfc9
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=669a36c847c7313965505dd7925f309c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_EXERR"
+    - Name: Sts_bNotReady
+      Id: g=1b314c595e382ddb8bb0a6a96c412c32
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=962da00c1710f2817f8d9cd96fc86c0c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_bNotReady"
+  - Name: raC_Opr_PF525_Energy
+    Id: g=672dc229f2017a19ac37149ed34bdea8
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=2cd432b7bd7fd0249ed25c42c297ccc6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b80decef0f7dadeb6f362891f3d32c7c
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=c9d5e65aabb36c06daf1afce94aa19d8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=162c0a6884a650aaed350f5b395695a4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Sts_ER
+      Id: g=2a88250ea55421d240a4d142bd268a2f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=40b96aacfc4f36a0024cc905b8aa35b8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ER"
+    - Name: Sts_ERR
+      Id: g=7b963315b5eb20f6d4b46d925df3d8f0
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=63c202fdd4732aa8c0db70022269ae6e
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ERR"
+    - Name: Sts_EXERR
+      Id: g=cccf387d5601fe3fe499c3d62f10fedc
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=eb4aac8a415ab43c826400eb140102a4
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_EXERR"
+    - Name: raC_Opr_PF525_Energy
+      Id: g=51ca4d31238f5927e51977d14383da22
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b4ec56ecc51b2950daf75b70e3f83af6
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Opr_PF525_Energy"
+    - Name: Set_SampleInterval
+      Id: g=6cfa33a487be914ca4d57aa092484d29
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=7d0a3c55ad1a7774cf3f09508d052db3
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Set_SampleInterval"
+    - Name: Set_Inertia
+      Id: g=0000f0a6f5758a18f406bcb3b9896c9d
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=5682f7b760102fc91cf1e4b3417e15f8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Set_Inertia"
+    - Name: Set_PowerNominal_kW
+      Id: g=c7de57b30c60dbf4bc1a75b49fc92b71
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=4fa755df733b7db18c61a7f7da049774
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Set_PowerNominal_kW"
+    - Name: Set_PowerNominal_RPM
+      Id: g=089e7a2c2351910d73d81437ce9665a0
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=acdb2bedba7074452c52cd90077c9a84
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Set_PowerNominal_RPM"
+    - Name: Inp_Speed_RPM
+      Id: g=aebf77e905572bfb8433a0d185ca778f
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=175511311886a74216225d0c51d9f60d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_Speed_RPM"
+    - Name: Cmd_ResetOdometers
+      Id: g=be97e674c708fdc2e249427a2adaeaea
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=ec6490f78d0b37ff0fcb787836636e9b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ResetOdometers"
+    - Name: Sts_DataAcquisitionDuration
+      Id: g=421621e9c1e5706b98153b3f87152242
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=52ce15acf7048108fc1ac8a3ab112d74
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_DataAcquisitionDuration"
+    - Name: Sts_Idle
+      Id: g=418fb778d17ff6fd5f3694aaa4200095
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=53a4eb3db20ef941238f4d9d8844d986
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Idle"
+    - Name: Sts_AcquiringData
+      Id: g=4c38218e362eefd4410c43edefe46b76
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=6c4fe308da9186147b58bc5db38c6fd9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_AcquiringData"
+    - Name: Sts_WaitingForDevice
+      Id: g=6a57b056edb614190619b25297039b2a
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=756f9f9126c0633c21d27ba7ec43e2b8
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_WaitingForDevice"
+    - Name: Sts_WaitingForCtrlResource
+      Id: g=3cc5ad6c69b192793088eb25e20c658c
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e916e3da212e67194ecf6609c5dbe917
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_WaitingForCtrlResource"
+    - Name: Sts_OdometerResetServiced
+      Id: g=d3d84a7c523bc1b01dc710b8d054b8e6
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=842f3ea71406a97e522c03fc8b57b29d
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_OdometerResetServiced"
+  - Name: raC_Opr_PF755T_PMv11
+    Id: g=d183137853bb01dc10c38a3426c99e56
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=a110f44f6629eca9c4b449f8b960e2b8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=58a6b9a84c14fe5c5e59b4a286749756
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=d883be07566ce550f90543ad35532ada
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b92e1721c68dd7b0271577003d050d0a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Set_SampleInterval
+      Id: g=f2dc359ce5a62834c6dfda66e0c5775a
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=a5796c8e61dfc2cab7429a4a6ef91c0f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Set_SampleInterval"
+    - Name: Sts_ER
+      Id: g=9613ef6828b68e9e87635fa3dfc06553
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=f85e4bcc15da9457634038243fb1fa27
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_ER"
+    - Name: Sts_Idle
+      Id: g=ac727a852456061bd60131c587d3f73b
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=26a4e9bd86fa32c46ea07086af2c2314
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_Idle"
+    - Name: Sts_AcquiringData
+      Id: g=1e6374b36757653cb0e59655d8195a87
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=d60c4a9f81561c17ca4bbf42ed88244b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_AcquiringData"
+    - Name: Sts_WaitingForDevice
+      Id: g=c007afea97bd78c28c1a1864796789ee
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=1963f4f9372cc5e1a3cc87b81e8958b1
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_WaitingForDevice"
+    - Name: Sts_WaitingForCtrlResource
+      Id: g=808d47f36547c2429503def7e3a6fa70
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=aee37b3a1a6b4e3f2f913969042cb055
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_WaitingForCtrlResource"
+    - Name: Sts_DataAcquisitionDuration
+      Id: g=33cdce9844b8cd6df88aa305b4aa3b0e
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=e68b0b29505eb6313b062cef379e94c0
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_DataAcquisitionDuration"
+    - Name: bSts_ComponentPMEvent0
+      Id: g=eaa80fedd93358cc580418193f422552
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=8cf0d5d50900daca2efba2f8bf42c3d5
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "bSts_ComponentPMEvent0"
+    - Name: bSts_ComponentPMEvent32
+      Id: g=4f08b2f5276f1ef6aef3d509f3161a08
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=aedde51c871ee3361f7b878ff22b2904
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "bSts_ComponentPMEvent32"
+    - Name: bSts_ComponentPMEvent64
+      Id: g=d11ab9b086f4261b4db81e253fdf9cb8
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=fe2189fe1a838987dace68f9c01ad881
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "bSts_ComponentPMEvent64"
+    - Name: bSts_ComponentPMEvent96
+      Id: g=a214aff7a17380dc9c8394810d54c8cd
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=4dc6d144cb4097e06641e9bfd7bea08f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "bSts_ComponentPMEvent96"
+    - Name: Sts_AnyComponentPMEvent
+      Id: g=c08f6281ac4d3a760c0222cb5d1aa42f
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=dfbd27c57b6db73d7304d258c70aa9cc
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Sts_AnyComponentPMEvent"
+  - Name: raC_Tec_PwrVelocityStateMonitor
+    Id: g=ecb8db012bb1b8b2e720245edcd27cc6
+    Supertype: TagStructure
+    Children:
+    - Name: EnableIn
+      Id: g=017ebead231185518fa07108e3808672
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=12787b98146743c31796dd956fb34a48
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableIn"
+    - Name: EnableOut
+      Id: g=6ec84cb10436593f74c1b252e1fea417
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=bd39fc28d67434cfffe87a694eeaed6f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "EnableOut"
+    - Name: Inp_InhibitCfg
+      Id: g=bb36a34aa2526702726b18c1ebc74227
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=9d744d747ed6efda38019a3502d322cf
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Inp_InhibitCfg"
+    - Name: Cmd_ClearCntActivation
+      Id: g=124a06e205b4eb7e25b09bfd38d8a4c3
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=c95f83b48fd48863282127fe0eb1cf89
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearCntActivation"
+    - Name: Cmd_ClearMaxHrsActive
+      Id: g=7bfba26128fc9df72b4881b3054a30ee
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=69dc36ab255cb64cc2da9a860f45ecfe
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearMaxHrsActive"
+    - Name: Cmd_ClearTotHrsActive
+      Id: g=d43417839f50936369e3ea08483a0810
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=2e039a413d2870a53313bedb601f306b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearTotHrsActive"
+    - Name: Cmd_ClearCntDisconnect
+      Id: g=50af1766e37b4228278b014a72b8c2a4
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=22f203216f960015e9f24d328b0b7546
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearCntDisconnect"
+    - Name: Cmd_ClearMaxHrsConnected
+      Id: g=39699d20cab6babd33bd8725b1e13bf0
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=2831e518ca11d25ce08f4dd75a8f7c17
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearMaxHrsConnected"
+    - Name: Cmd_ClearTotHrsConnected
+      Id: g=7555ba245ac71a76d0af1321870aadc8
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=b4ba7a86dc1df82bbc31b35a2f108891
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Cmd_ClearTotHrsConnected"
+    - Name: Val_Activations
+      Id: g=95bb233abd3516540d830c294f0cff57
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=915f588060ce19184617acf575fbbdfa
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_Activations"
+    - Name: Val_CurActiveHrs
+      Id: g=623ef9cdc5a25e036519acae09598e32
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=63440fa107cd7b461bdcb476feb767dd
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_CurActiveHrs"
+    - Name: Val_MaxActiveHrs
+      Id: g=e8b1d84c858b87e3539871de0cd2e129
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=c91857dfe2981c5bd2567f6ae21dd61b
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_MaxActiveHrs"
+    - Name: Val_TotActiveHrs
+      Id: g=bc5739457dcd05f8aa03caa254c4b3cd
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=ae53d6d989e64ff6ed378dbaaa052aa6
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_TotActiveHrs"
+    - Name: Val_Disconnections
+      Id: g=7fc6f18e09a724e946780d265e777167
+      Type: RAEtherNetIPTag
+      DataType: Int32
+      Value: 0
+      Children:
+      - Name: SymbolName
+        Id: g=8ecf5bff47c909356ec13a4695290c0a
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_Disconnections"
+    - Name: Val_CurConnectedHrs
+      Id: g=b388ce06ac93385e9efd5cba13955aac
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=e2dfd20e440be88342a579bc10ccc746
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_CurConnectedHrs"
+    - Name: Val_MaxConnectedHrs
+      Id: g=04d51b62b596e8ad8ca1579941ffb5ee
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=a649992cc473093519060684f0cca5a9
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_MaxConnectedHrs"
+    - Name: Val_TotConnectedHrs
+      Id: g=6d40fe82a0853d3f9f2cf6df08f6f4ac
+      Type: RAEtherNetIPTag
+      DataType: Float
+      Value: 0.0
+      Children:
+      - Name: SymbolName
+        Id: g=bed142716c51bd51ae4f780efab187fc
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "Val_TotConnectedHrs"
+    - Name: raC_Tec_PwrVelocityStateMonitor
+      Id: g=10fed1430e3712f0ccc542d19febbc0d
+      Type: RAEtherNetIPTag
+      DataType: Boolean
+      Value: false
+      Children:
+      - Name: SymbolName
+        Id: g=e8c38599f095ab113b27e2262712518f
+        Type: BaseDataVariableType
+        DataType: String
+        Value: "raC_Tec_PwrVelocityStateMonitor"

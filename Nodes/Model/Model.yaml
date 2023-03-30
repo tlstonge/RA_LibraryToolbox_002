@@ -1,0 +1,82 @@
+Name: Model
+Id: g=5836f616a082079ebe19f67d5e60de6f
+Type: FolderType
+Children:
+- Name: raC_Dvc_PF525_ObjectInstance
+  Id: g=e3999c3175ec4fddb3b9d03573d998ac
+  Type: raC_Dvc_PF525_Object
+  Children:
+  - Name: Dvc
+    Id: g=c26e97f5440c4cfc3b23774e0575c571
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"f2cafd44f4af8fb378870f74001c5bd7","Namespace":20}
+    Children:
+    - Name: Kind
+      Id: g=c3f28f49d913e3d5e4d95479468b740f
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"b2dbd7f604ed1617d4b8ed92ab6a66dd","Namespace":20}
+  - Name: Alias2
+    Id: g=c423a8c3fd542f8304fcbbce34caa9d2
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=4bd4fd0445b955fdca9d866a095aa85e
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: raC_Dvc_PF525_Object
+  Id: g=09a07e197ea4fb3c46ff26733f856f2a
+  Supertype: BaseObjectType
+  Children:
+  - Name: Dvc
+    Id: g=b6e4d9a924a9baca4375d6579efa6f69
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=7cb9355c72f76f377a18b4b98189a56d
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"b2dbd7f604ed1617d4b8ed92ab6a66dd","Namespace":20}
+  - Name: Alias2
+    Id: g=610619393a7d96c23c8a34e74f14085e
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=524536a6d028255f65aec0a7b8e2dd56
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+- Name: raC_Dvc_PF755_ObjectInstance
+  Id: g=d6f6902418d63a030ef3dfd5ee16df49
+  Type: raC_Dvc_PF525_Object
+  Children:
+  - Name: Dvc
+    Id: g=2c81fd0a1260610d190db169feb6203f
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"9e81bc4637d97f68ebee1936308fd5e1","Namespace":20}
+    Children:
+    - Name: Kind
+      Id: g=d2d8fd2e86200bb44114bbc22a54bf40
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":2,"Id":"9fb42b20b9e7d489f05c748159f18918","Namespace":20}
+  - Name: Alias2
+    Id: g=2d56558e642348f5cc1fc08cc76f5ec3
+    Type: Alias
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Id: g=a05035864bd85c818e8fb6324e878fa1
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}

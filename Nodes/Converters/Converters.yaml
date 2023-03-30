@@ -1,0 +1,48 @@
+Name: Converters
+Id: g=6a03e40625383a0a8138742b6d0e7a0e
+Type: FolderType
+Children:
+- Name: raC_Dvc_PF525_FltDetDesc
+  Id: g=dbc95a45d84bb3c5999b585ecb3dd8b6
+  Supertype: ValueMapConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Pairs
+    Id: g=cb450c9811b22a52732161bdf61949c0
+    Type: BaseObjectType
+    ModellingRule: None
+    Children:
+    - Name: Pair
+      Id: g=16cd8d72f8dff99c8c98941d393a060f
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Id: g=fac826ecf30de454e63e943b2fdae5aa
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 0
+      - Name: Value
+        Id: g=bd3d3ea85dcd3d9db5657a420879ddfc
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: None
+        Value: {"NamespaceIndex":20,"TextId":"Do this"}
+    - Name: Pair1
+      Id: g=c3590b89ebdc6e341533dc1290dea66c
+      Type: ValueMapPair
+      ModellingRule: None
+      Children:
+      - Name: Key
+        Id: g=abc64d5b35439b7182ded97c6ff735e9
+        Type: BaseDataVariableType
+        DataType: UInt32
+        ModellingRule: None
+        Value: 1
+      - Name: Value
+        Id: g=7163af9477caf928942ffc1b18e04aae
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: None
+        Value: {"NamespaceIndex":20,"TextId":"Do that"}

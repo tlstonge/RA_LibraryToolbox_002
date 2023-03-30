@@ -1,0 +1,33 @@
+Name: TagImporter
+Id: g=cc6b8da60024509be88237e0ef76fad5
+Type: RAEtherNetIPTagImporter
+OwnerId: ns=2;g=9c2e845dcfbc33b249fe7e9ee0e2fe54
+Children:
+- Name: IgnoredPLCItems
+  Id: g=83fe8c6b3f992f8c9c2bc4fd79514a77
+  Type: BaseDataVariableType
+  DataType: BaseDataType
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+- Name: IgnoredHMIItems
+  Id: g=cba0aabf46076d7d7a771999311c5618
+  Type: BaseDataVariableType
+  DataType: NodeId
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: []
+- Name: FilePath
+  Id: g=7041ce40c93c2f9108a00433ac0b833a
+  Type: BaseDataVariableType
+  DataType: AbsoluteResourceUri
+  Value: "file:///C:/Users/TLSt.Ong/OneDrive - Rockwell Automation, Inc/LIBRARIES/Projects/ApplicationExamples/Project_PowerApplication.ACD"
+- Name: Mode
+  Id: g=9ce64e768e8aba7f9be4c6a76da76d80
+  Type: BaseDataVariableType
+  DataType: FetchModes
+  Value: 1
+- Name: ImportTypes
+  Id: g=b9645512bfcf695cc6e3503814645002
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true

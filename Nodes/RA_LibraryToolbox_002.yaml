@@ -1,0 +1,72 @@
+Name: RA_LibraryToolbox_002
+Id: g=a8bbd4da6f9cc012cce4698459d5dbb3
+Type: ProjectFolder
+Children:
+- Name: BranchingEnabled
+  Id: g=c6fefdb6deb0ead8e3dfa97f420db9ac
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: false
+- Name: PasswordPolicy
+  Id: g=c31ae316558782ea36a941b8f033d388
+  Type: PasswordPolicy
+  Children:
+  - Name: MaximumPasswordAge
+    Id: g=0e3feafc152770000a77ceab3c58105c
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: EnforcePasswordHistory
+    Id: g=fd5e05e4497d41eaa0297ea5f0af4166
+    Type: PropertyType
+    DataType: Byte
+    Value: 1
+  - Name: MinimumPasswordAge
+    Id: g=0e5d6fa64e546fc46b2077127a77e7c8
+    Type: PropertyType
+    DataType: UInt16
+    Value: 0
+  - Name: MinimumPasswordLength
+    Id: g=fed93cd00e402cb1def2362f27d8098b
+    Type: PropertyType
+    DataType: Byte
+    Value: 8
+- Name: Locales
+  Id: g=76422b800ff6cee6e95e7d9a440114fa
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US","fr-FR"]
+- Name: LocaleFallbackList
+  Id: g=b98cb775fa355184a6a1f5b705bfefc0
+  Type: BaseDataVariableType
+  DataType: String
+  ValueRank: OneDimension
+  ArrayDimensions: [0]
+  Value: ["en-US"]
+- File: UI/UI.yaml
+- File: Model/Model.yaml
+- File: Converters/Converters.yaml
+- File: Alarms/Alarms.yaml
+- File: Recipes/Recipes.yaml
+- File: Loggers/Loggers.yaml
+- File: DataStores/DataStores.yaml
+- File: Reports/Reports.yaml
+- File: 'OPC-UA/OPC-UA.yaml'
+- File: CommDrivers/CommDrivers.yaml
+- File: NetLogic/NetLogic.yaml
+- File: Security/Security.yaml
+- File: Translations/Translations.yaml
+- File: Retentivity/Retentivity.yaml
+- Name: DefaultUserFolder
+  Id: g=138a5940afce4633bc65e3208f64edb5
+  Type: NodePointer
+  DataType: NodeId
+  Value: {"IdType":2,"Id":"9ba29aea23c8e978cd871ea831526cc8","Namespace":20}
+  Children:
+  - Name: Kind
+    Id: g=c0957fce33fc7a85b872b1ad55f79f1b
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"Id":61}

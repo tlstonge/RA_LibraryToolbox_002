@@ -1,0 +1,8 @@
+Name: Faceplates
+Id: g=8e42cd9461ca6b39259ebd96c5b9ad08
+Type: FolderType
+Children:
+- File: raC_Dvc_P525/raC_Dvc_P525.yaml
+- File: Toolbox/Toolbox.yaml
+- File: raC_Dvc_StateMon/raC_Dvc_StateMon.yaml
+- File: raC_Dvc_PF525_AliasOnly/raC_Dvc_PF525_AliasOnly.yaml

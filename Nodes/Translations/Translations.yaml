@@ -1,0 +1,20 @@
+Name: Translations
+Id: g=7bf5b3446565ddfedfe96dd3da3f15d1
+Type: FolderType
+Children:
+- Name: LocalizationDictionary1
+  Id: g=dcd2c90a11a7ae8fc6ba6e284eeaffd2
+  Type: LocalizationDictionary
+  DataType: String
+  ValueRank: OneOrMoreDimensions
+  ArrayDimensions: [0,0]
+  Value: 
+   {
+    "Type": 12,
+    "Dimensions": [3,3],
+    "Body": [
+     "","en-US","fr-FR",
+     "Do that","Do that","Fait ca",
+     "Do this","Do this","Fait ceci"
+    ]
+   }
