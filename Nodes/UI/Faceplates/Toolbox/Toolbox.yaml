@@ -511,7 +511,7 @@ Children:
     Type: BaseVariableType
     DataType: VerticalAlignment
     ModellingRule: Optional
-    Value: 2
+    Value: 0
   - Name: BottomMargin
     Id: g=87384e0ff3085f642124fb65a104c461
     Type: BaseVariableType
@@ -540,37 +540,6 @@ Children:
     Type: BaseVariableType
     DataType: Float
     Value: 100.0
-    Children:
-    - Name: ConditionalConverter1
-      Id: g=9e18cff1faf2ec1ce1822b99a65891d9
-      Type: ConditionalConverter
-      Children:
-      - Name: Condition
-        Id: g=c743e7ac4390139fbb69930cce066e97
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ReferenceType: HasSource
-        Value: false
-        Children:
-        - Name: DynamicLink
-          Id: g=d0328af27df36ce674b0244f4b6d394d
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../Editable"
-      - Name: TrueValue
-        Id: g=d5df99fb2db06bcfc02451202c2f29fa
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 100.0
-      - Name: FalseValue
-        Id: g=1990bf89e47ec7c3f5fc8109ba7699ab
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 30.0
   - Name: LeftMargin
     Id: g=1377fef86ee6bdbec3d3c24bde0378b8
     Type: BaseVariableType
@@ -626,7 +595,7 @@ Children:
     Type: BaseVariableType
     DataType: HorizontalAlignment
     ModellingRule: Optional
-    Value: 1
+    Value: 0
   - Name: TopMargin
     Id: g=9877bc7dc8815c5b2da128f90d3ad55b
     Type: BaseVariableType
@@ -1219,64 +1188,23 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 32.0
+    Value: 48.0
   - Name: Opacity
     Id: g=2b2fee47cf3b6a601c497d7b3259f522
     Type: BaseVariableType
     DataType: Float
     Value: 100.0
-    Children:
-    - Name: ConditionalConverter1
-      Id: g=42350f4962b11932a651e83c62c1308e
-      Type: ConditionalConverter
-      Children:
-      - Name: Condition
-        Id: g=96b73fcf6763fe04188d56890f05b884
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ReferenceType: HasSource
-        Value: false
-        Children:
-        - Name: DynamicLink
-          Id: g=fe41301757b7b01eb24f8e0682ead1ae
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../Enabled"
-      - Name: TrueValue
-        Id: g=2e29984b31ae616d785cd175ee25e09b
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 100.0
-      - Name: FalseValue
-        Id: g=55bbb3a60dd40363a4c47d15ed64c077
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 30.0
   - Name: Enabled
     Id: g=88edb2d64fe5ea2a3dbe6a8863f0d5da
     Type: BaseDataVariableType
     DataType: Boolean
     Value: true
-- Name: Switch1
-  Id: g=69f4c415a2f422c83011105a12fa78ed
-  Supertype: Switch
-  ReferenceType: HasComponent
-  Children:
-  - Name: Checked
-    Id: g=03e18b69b6eb497fdaf0e9e1c70f90bc
-    Type: BaseDataVariableType
-    DataType: Boolean
-    Value: false
-  - Name: Width
-    Id: g=7203897293821948e51d987be018e2d4
+  - Name: Height
+    Id: g=0e01926f07d9bc8eaa8b79449289e8e3
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: 60.0
+    Value: 48.0
 - Name: raC_Button_CmdImg
   Id: g=8c687095c3bb09be8e28be500de24e25
   Supertype: Panel
@@ -1513,42 +1441,11 @@ Children:
     Type: BaseVariableType
     DataType: Float
     Value: 100.0
-    Children:
-    - Name: ConditionalConverter1
-      Id: g=6db74682b76027219715bd6121c0c0c5
-      Type: ConditionalConverter
-      Children:
-      - Name: Condition
-        Id: g=bf4d8380c7e7c42ff7994a04fb6640a4
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ReferenceType: HasSource
-        Value: false
-        Children:
-        - Name: DynamicLink
-          Id: g=f02928e4c49dc6a74482382598ad9f0b
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../Enabled"
-      - Name: TrueValue
-        Id: g=2b841c73d01ff708bcc4ee1607d1796d
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 100.0
-      - Name: FalseValue
-        Id: g=51d0c8993cf183402c21ec1dcd1791dc
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 30.0
   - Name: Enabled
     Id: g=6a6ac65846a2c8677f29a88f396b267c
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
 - Name: raC_Button_CmdTxt
   Id: g=2e12880c98aa52060ae36a626d990cf1
   Supertype: Panel
@@ -1773,42 +1670,11 @@ Children:
     Type: BaseVariableType
     DataType: Float
     Value: 100.0
-    Children:
-    - Name: ConditionalConverter1
-      Id: g=1c0a19c2fb8ce7193d553ca938d62d50
-      Type: ConditionalConverter
-      Children:
-      - Name: Condition
-        Id: g=e79ecad8490263b4dce76ae53cfa7d96
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ReferenceType: HasSource
-        Value: false
-        Children:
-        - Name: DynamicLink
-          Id: g=fa610de5931d85b6660a9327989ebd6a
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "../../../Enabled"
-      - Name: TrueValue
-        Id: g=1b315be809e57e6d7d2e0adeeeb6c149
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 100.0
-      - Name: FalseValue
-        Id: g=f3d581bae1f0b5d211b78b1317b2b679
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 30.0
   - Name: Enabled
     Id: g=12661cdd6008e962befbd9be1f67e095
     Type: BaseDataVariableType
     DataType: Boolean
-    Value: false
+    Value: true
   - Name: LeftMargin
     Id: g=1fc4547e70ca57210e720069187910a0
     Type: BaseVariableType
@@ -1900,37 +1766,6 @@ Children:
     Type: BaseVariableType
     DataType: Float
     Value: 100.0
-    Children:
-    - Name: ConditionalConverter1
-      Id: g=c5fd6fb730232950dcfa94dece6cf227
-      Type: ConditionalConverter
-      Children:
-      - Name: Condition
-        Id: g=46081a75f96c56ca8dfd7143e1e381bb
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ReferenceType: HasSource
-        Value: false
-        Children:
-        - Name: DynamicLink
-          Id: g=fa63ca28c2f07c48ce391112f6563c00
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{NodeId:ns=20;g=82ea96b6-c1aa-13f3-4821-f959a54a8008}"
-      - Name: TrueValue
-        Id: g=f4bcfa7cd9e2d34540fec79ab6d7fb5c
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 100.0
-      - Name: FalseValue
-        Id: g=4eaa73df106411e7a3120e035d23be40
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 30.0
   - Name: HitTestVisible
     Id: g=c379a1525715fd8a131ed47359b6231b
     Type: BaseDataVariableType
@@ -2141,7 +1976,6 @@ Children:
     Id: g=82ea96b6c1aa13f34821f959a54a8008
     Type: BaseDataVariableType
     DataType: Boolean
-    ModellingRule: Optional
     Value: true
   - Name: NavToDialog
     Id: g=a47e34d3f0a12fef01a1d530a7e510dd
@@ -2227,37 +2061,6 @@ Children:
     Type: BaseVariableType
     DataType: Float
     Value: 100.0
-    Children:
-    - Name: ConditionalConverter1
-      Id: g=80cdcda1086281bfa19d0805cac3cd5d
-      Type: ConditionalConverter
-      Children:
-      - Name: Condition
-        Id: g=a74f25d3f750f0ea9c56266a1083dd20
-        Type: BaseDataVariableType
-        DataType: Boolean
-        ReferenceType: HasSource
-        Value: false
-        Children:
-        - Name: DynamicLink
-          Id: g=d7f622d1591986ce302de93ecc104d94
-          Type: DynamicLink
-          DataType: NodePath
-          Value: "{NodeId:ns=20;g=af1b8943-9906-5414-dec4-35fdcf265032}"
-      - Name: TrueValue
-        Id: g=1cb1020f39a66b049f50853a90248529
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 100.0
-      - Name: FalseValue
-        Id: g=cf01b22e83e7b47ba74719e76de60701
-        Type: BaseDataVariableType
-        DataType: Float
-        ReferenceType: HasParameter
-        ModellingRule: Optional
-        Value: 30.0
   - Name: HitTestVisible
     Id: g=10238d0b32e8f4622fdf91ac5ee59061
     Type: BaseDataVariableType
@@ -2826,7 +2629,7 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: 48.0
-- Name: ListBox1
+- Name: raC_ListBox
   Id: g=d5bcdc0d79a2e66661ed381b3c7e823b
   Supertype: ListBox
   ReferenceType: HasComponent

@@ -1776,23 +1776,6 @@ Children:
       Type: BaseVariableType
       DataType: Float
       Value: 100.0
-      Children:
-      - Name: ConditionalConverter1
-        Id: g=d98c07c6ad369f2984bc37a402f202b6
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Id: g=7e2f6138d6bfdeff0fab1c43e2ef41c4
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Id: g=d20bcbd8ec20aee28a57ee940e40de2c
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../Editable"
     - Name: LeftMargin
       Id: g=aa15ef192f40ea1c4daef1a6a8513339
       Type: BaseVariableType
@@ -1835,23 +1818,6 @@ Children:
       Type: BaseVariableType
       DataType: Float
       Value: 100.0
-      Children:
-      - Name: ConditionalConverter1
-        Id: g=55117acc0f70d27cf01622f883421b77
-        Type: ConditionalConverter
-        Children:
-        - Name: Condition
-          Id: g=93b08008906b878a14ef58a6414332e5
-          Type: BaseDataVariableType
-          DataType: Boolean
-          ReferenceType: HasSource
-          Value: false
-          Children:
-          - Name: DynamicLink
-            Id: g=e8b84cafafa8f64ca77ccb46369c7c0f
-            Type: DynamicLink
-            DataType: NodePath
-            Value: "../../../Editable"
     - Name: LeftMargin
       Id: g=2b7234eaf4dd50c4d92e84274ef37f3c
       Type: BaseVariableType
