@@ -120,9 +120,31 @@ Children:
   - Name: ButtonStyle
     Id: g=04da0367dd5953faa8016de44998b111
     Type: ButtonStyle
+    Children:
+    - Name: Color
+      Id: g=8700ec38a5ed36d04ed822a0c0c76f9b
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#c0c0c0"
+    - Name: BorderColor
+      Id: g=1255a64c2aa3ad470dfc71ca5d9805df
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#b0b0b0"
   - Name: ButtonAccentStyle
     Id: g=8fe80281703ebed6857cf6acf3b36e7f
     Type: ButtonStyle
+    Children:
+    - Name: Color
+      Id: g=7d4f5c7aec4be9038874ce1abd44b3e6
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#3f3f3f"
+    - Name: PressedColor
+      Id: g=2a3ca6ca69f19c219b61ff2664ed73f3
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#3f3f3f"
   - Name: DataInputStyle
     Id: g=e184405f4ff0c08c73f7910a6c70e8f8
     Type: DataInputStyle
@@ -131,16 +153,73 @@ Children:
       Id: g=ab39f1d3c387a0943811e6c68e92e739
       Type: BaseDataVariableType
       DataType: Color
-      Value: "#a892db"
+      Value: "#3f3f3f"
+    - Name: FocusBorderColor
+      Id: g=8efc588a94c446078abb828d54eece16
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#b0b0b0"
+    - Name: SelectionColor
+      Id: g=cc83384e38fc44e6c13c7c0c50468a77
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#3f3f3f"
   - Name: SwitchStyle
     Id: g=5a4eee8dd259add2957894f9f076de5c
     Type: SwitchStyle
+    Children:
+    - Name: ActiveBackgroundColor
+      Id: g=99af79b68d4136f21fb5aa6d32c11aa0
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#e0e0e0"
+    - Name: BorderColor
+      Id: g=877ece6066f57d8fe7cca057f14c2d26
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#b0b0b0"
+    - Name: ActiveBorderColor
+      Id: g=27bb094e46c909d0539f83afa4e74b80
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#b0b0b0"
+    - Name: HandleColor
+      Id: g=607df999368e1bb69c052165ce768034
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#f0f0f0"
+    - Name: HandleBorderColor
+      Id: g=0e38369809844ae4fa015b2b1c72799e
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#6a6a6a"
+    - Name: Radius
+      Id: g=f7663d41e7f014e92d20498b8eb12b43
+      Type: BaseDataVariableType
+      DataType: Size
+      Value: 50.0
   - Name: GaugeStyle
     Id: g=6a862fd193c57189b50a368af1f3efc3
     Type: GaugeStyle
   - Name: NavigationPanelStyle
     Id: g=69416ee1e92eb1187cbc2fbb5b096c00
     Type: NavigationPanelStyle
+    Children:
+    - Name: ActiveColor
+      Id: g=02a78f88ac7b1a7c9021d3ec6f4d2f3e
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#e0e0e0"
+    - Name: ActiveTextColor
+      Id: g=51c279c3b6a2066a7650aaa0405cc361
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#3f3f3f"
+    - Name: InactiveColor
+      Id: g=0f48564755cc57df805377e7256c74d6
+      Type: BaseDataVariableType
+      DataType: Color
+      Value: "#a0a0a4"
   - Name: ChartStyle
     Id: g=c0f0c319751f15d923a9a255a2825714
     Type: ChartStyle
@@ -171,42 +250,42 @@ Children:
     Id: g=c161e39a8ae0430bc997eb815304b0dc
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#0fafff"
+    Value: "#b0b0b0"
   - Name: AccentColor
     Id: g=b4de57550d1a41003e7aebeeb9242a16
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#ff0ff5"
+    Value: "#3f3f3f"
   - Name: AccentBorderColor
     Id: g=04bbd9a406623854d1ec3238b4d42aac
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#075982"
+    Value: "#2a4191"
   - Name: AccentTextColor
     Id: g=9ab4a374f4124f1ef88998655c8bdf20
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#4ae63a"
+    Value: "#b0b0b0"
   - Name: DataInputBackgroundColor
     Id: g=243109ec03362556cb489310aa7bfcbd
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#f2d375"
+    Value: "#ffffff"
   - Name: DataInputTextColor
     Id: g=a93c936ac5030b93cbb08218398dcdf7
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#86eede"
+    Value: "#3f3f3f"
   - Name: InteractiveBackgroundColor
     Id: g=b74c93505cca40fe44883651c3e850d3
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#16ae99"
+    Value: "#b0b0b0"
   - Name: InteractiveColor
     Id: g=e76f81f08ddea13a36507eec963db2f8
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#d89e9e"
+    Value: "#a0a0a4"
   - Name: WindowColor
     Id: g=2d224db2e901977d70531d7b2b8dfac0
     Type: BaseDataVariableType
@@ -216,12 +295,12 @@ Children:
     Id: g=b2f92b388a6bdf61f6eacf9133f5d25f
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#6f3f61"
+    Value: "#3f3f3f"
   - Name: BorderColor
     Id: g=778a6632e810b3fd98e9085804447ea5
     Type: BaseDataVariableType
     DataType: Color
-    Value: "#5d3636"
+    Value: "#b0b0b0"
 - Name: NativePresentationEngine
   Id: g=87e5633c972ccfc2638e2d4737a73fcb
   Type: NativePresentationEngine
