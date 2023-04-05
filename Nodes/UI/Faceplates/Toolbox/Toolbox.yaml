@@ -546,6 +546,12 @@ Children:
     DataType: Size
     ModellingRule: Optional
     Value: -1.0
+  - Name: Height
+    Id: g=6f6c9c1f060c0ab44f6cc899f69335d7
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 48.0
 - Name: raC_NumericValue
   Id: g=122243e8cd8baf7a03c15afc3aad7ff5
   Supertype: Label
@@ -654,6 +660,12 @@ Children:
     DataType: Boolean
     ModellingRule: Optional
     Value: true
+  - Name: Height
+    Id: g=7f4e5a3575ccaf7bf5a611dc1c2f5bea
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 48.0
 - Name: raC_LEDBlue
   Id: g=ad50c857fffce86196295868a46bce24
   Supertype: Rectangle
@@ -1462,7 +1474,7 @@ Children:
     Type: BaseVariableType
     DataType: Size
     ModellingRule: Optional
-    Value: -1.0
+    Value: 48.0
   - Name: raC_Button_Cmd_Btn
     Id: g=cfbbe91706d9a5c51f4ec71c28941ad2
     Type: Button
@@ -1598,6 +1610,24 @@ Children:
       DataType: Color
       ModellingRule: Optional
       Value: "#c6c6c6"
+    - Name: VerticalAlignment
+      Id: g=83e5b8c32a74292c6586e6a3089660b6
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Height
+      Id: g=ffcfa42908fc48f474db804ca0ff6aae
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 48.0
+    - Name: HorizontalAlignment
+      Id: g=9734754866675e8640075f9b9805da95
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 2
   - Name: raC_Button_Cmd_Sts
     Id: g=8d426951822209d76c072c691d99ac08
     Type: Rectangle
